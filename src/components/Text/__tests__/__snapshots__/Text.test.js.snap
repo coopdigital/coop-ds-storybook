@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text should work with all variants 1`] = `
+<div>
+  <p
+    className="coop-t-h-mega"
+  >
+    Mega
+  </p>
+  <p
+    className="coop-t-lead-p"
+  >
+    Lead
+  </p>
+  <p
+    className="coop-t-regular"
+  >
+    Regular
+  </p>
+  <p
+    className="coop-t-regular"
+    size="medium"
+  >
+    Medium
+  </p>
+  <p
+    className="coop-t-bold"
+  >
+    Bold
+  </p>
+</div>
+`;
+
+exports[`Text the specified element should be rendered 1`] = `
+<div>
+  <p
+    className="coop-t-regular"
+  >
+    test-value
+  </p>
+  <p
+    className="coop-t-regular"
+  >
+    test-value
+  </p>
+  <p
+    className="coop-t-regular"
+  >
+    test-value
+  </p>
+  <p
+    className="coop-t-regular"
+  >
+    test-value
+  </p>
+  <p
+    className="coop-t-regular"
+  >
+    test-value
+  </p>
+  <p
+    className="coop-t-regular"
+  >
+    test-value
+  </p>
+  <p
+    className="coop-t-regular"
+  >
+    test-value
+  </p>
+  <p
+    className="coop-t-regular"
+  >
+    test-value
+  </p>
+</div>
+`;

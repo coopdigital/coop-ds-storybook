@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid should allow center and reverse attributes 1`] = `
+Array [
+  <div
+    className="coop-l-grid coop-u-flex-center"
+  />,
+  <div
+    className="coop-l-grid coop-u-flex-row-reverse"
+  />,
+  <div
+    className="coop-l-grid coop-u-flex-center coop-u-flex-row-reverse"
+  />,
+]
+`;
+
+exports[`Grid should render correctly 1`] = `
+<div
+  className="coop-l-grid"
+/>
+`;
+
+exports[`Grid should render with children 1`] = `
+<div
+  className="coop-l-grid"
+>
+  test
+</div>
+`;

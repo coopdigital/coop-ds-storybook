@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert should render default Alert 1`] = `
+<div
+  className="coop-c-notification"
+  role="status"
+>
+  <h3
+    className="coop-c-notification__heading"
+  />
+  <p
+    className="coop-c-notification__p"
+  >
+    
+  </p>
+</div>
+`;
+
+exports[`Alert should work with all variants 1`] = `
+<div>
+  <div
+    className="coop-c-notification"
+    role="status"
+  >
+    <h3
+      className="coop-c-notification__heading"
+    >
+      Info Alert
+    </h3>
+    <p
+      className="coop-c-notification__p"
+    >
+      <a
+        className="coop-c-notification__link"
+        href="#"
+      >
+        Example message
+      </a>
+    </p>
+  </div>
+  <div
+    className="coop-c-notification coop-c-notification--alert"
+    role="status"
+  >
+    <h3
+      className="coop-c-notification__heading"
+    >
+      Warning Alert
+    </h3>
+    <p
+      className="coop-c-notification__p"
+    >
+      <a
+        className="coop-c-notification__link"
+        href="#"
+      >
+        Example message
+      </a>
+    </p>
+  </div>
+  <div
+    className="coop-c-notification"
+    role="status"
+  >
+    <h3
+      className="coop-c-notification__heading"
+    >
+      Alert with no link
+    </h3>
+    <p
+      className="coop-c-notification__p"
+    >
+      
+    </p>
+    <p
+      className="coop-c-notification__p"
+    >
+      Standard message
+    </p>
+  </div>
+</div>
+`;

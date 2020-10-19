@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputText should support all variants 1`] = `
+<div>
+  <div
+    className="coop-form__row"
+  >
+    <label
+      className="coop-form__label"
+      htmlFor="label"
+    >
+      Input with label
+    </label>
+    <input
+      aria-describedby=""
+      className="coop-form__field coop-form__input"
+      disabled={false}
+      id="label"
+      name="label"
+      placeholder={null}
+      type="text"
+    />
+  </div>
+  <div
+    className="coop-form__row"
+  >
+    <p
+      className="coop-form__hint"
+      id="label-hint"
+    >
+      Input with hint
+    </p>
+    <input
+      aria-describedby="label-hint"
+      className="coop-form__field coop-form__input"
+      disabled={false}
+      id="label"
+      name="label"
+      placeholder={null}
+      type="text"
+    />
+  </div>
+  <div
+    className="coop-form__row"
+  >
+    <label
+      className="coop-form__label"
+      htmlFor="label"
+    >
+      Input with label and hint
+    </label>
+    <p
+      className="coop-form__hint"
+      id="label-hint"
+    >
+      Input with label and hint
+    </p>
+    <input
+      aria-describedby="label-hint"
+      className="coop-form__field coop-form__input"
+      disabled={false}
+      id="label"
+      name="label"
+      placeholder={null}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`InputText should support all variants with error 1`] = `
+<div>
+  <div
+    className="coop-form__row"
+  >
+    <label
+      className="coop-form__label"
+      htmlFor="label"
+    >
+      Input with label
+    </label>
+    <p
+      className="coop-form__error"
+      id="label-error"
+    >
+      Error message
+    </p>
+    <input
+      aria-describedby="label-error"
+      className="coop-form__field coop-form__input coop-form__invalid"
+      disabled={false}
+      id="label"
+      name="label"
+      placeholder={null}
+      type="text"
+    />
+  </div>
+  <div
+    className="coop-form__row"
+  >
+    <p
+      className="coop-form__hint"
+      id="label-hint"
+    >
+      Input with hint
+    </p>
+    <p
+      className="coop-form__error"
+      id="label-error"
+    >
+      Error message
+    </p>
+    <input
+      aria-describedby="label-hint label-error"
+      className="coop-form__field coop-form__input coop-form__invalid"
+      disabled={false}
+      id="label"
+      name="label"
+      placeholder={null}
+      type="text"
+    />
+  </div>
+  <div
+    className="coop-form__row"
+  >
+    <label
+      className="coop-form__label"
+      htmlFor="label"
+    >
+      Input with label and hint
+    </label>
+    <p
+      className="coop-form__hint"
+      id="label-hint"
+    >
+      Input with label and hint
+    </p>
+    <p
+      className="coop-form__error"
+      id="label-error"
+    >
+      Error message
+    </p>
+    <input
+      aria-describedby="label-hint label-error"
+      className="coop-form__field coop-form__input coop-form__invalid"
+      disabled={false}
+      id="label"
+      name="label"
+      placeholder={null}
+      type="text"
+    />
+  </div>
+</div>
+`;

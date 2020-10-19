@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render empty button correctly 1`] = `
+<button
+  className="coop-btn"
+  type="button"
+/>
+`;
+
+exports[`Button should support all sizes 1`] = `
+<div>
+  <button
+    className="coop-btn coop-btn--small"
+    type="button"
+  >
+    Small
+  </button>
+  <button
+    className="coop-btn"
+    type="button"
+  >
+    Default/Medium
+  </button>
+</div>
+`;
+
+exports[`Button should support all variants 1`] = `
+<div>
+  <button
+    className="coop-btn"
+    type="button"
+  >
+    Default
+  </button>
+  <button
+    className="coop-btn coop-btn--primary"
+    type="button"
+  >
+    Primary
+  </button>
+  <button
+    className="coop-btn coop-btn--white"
+    type="button"
+  >
+    White
+  </button>
+  <button
+    className="coop-btn coop-btn--grey"
+    type="button"
+  >
+    Grey
+  </button>
+</div>
+`;

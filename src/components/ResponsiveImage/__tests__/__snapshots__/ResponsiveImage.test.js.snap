@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResponsiveImage should allow width and height attributes on default src 1`] = `
+<figure
+  className="coop-c-image"
+>
+  <picture
+    className="coop-c-image__media"
+  >
+    <img
+      alt="alt"
+      height="120"
+      src="src"
+      width="120"
+    />
+  </picture>
+</figure>
+`;
+
+exports[`ResponsiveImage should render correctly 1`] = `
+<figure
+  className="coop-c-image"
+>
+  <picture
+    className="coop-c-image__media"
+  >
+    <img
+      alt="alt"
+      height={null}
+      src="src"
+      width={null}
+    />
+  </picture>
+</figure>
+`;
+
+exports[`ResponsiveImage should render sources 1`] = `
+<figure
+  className="coop-c-image"
+>
+  <picture
+    className="coop-c-image__media"
+  >
+    <source
+      media="(min-width: 1200)"
+      srcSet="//images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=600&amp;h=338 1x, //images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=600&amp;h=338 2x"
+      type="image/webp"
+    />
+    <source
+      media="(min-width: 600)"
+      srcSet="//images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=600&amp;h=338 1x, //images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=600&amp;h=338 2x"
+      type="image/webp"
+    />
+    <img
+      alt="alt"
+      height={null}
+      src="src"
+      width={null}
+    />
+  </picture>
+</figure>
+`;

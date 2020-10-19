@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MembershipBanner should render correctly 1`] = `
+<aside
+  className="coop-c-membershipmodule"
+>
+  <div
+    className="coop-c-membershipmodule__inner coop-u-clearfix"
+  >
+    <article
+      className="coop-c-membershipmodule__content"
+    >
+      <header
+        className="coop-c-membershipmodule__header"
+      >
+        <h3
+          className="coop-c-membershipmodule__title"
+        >
+          Co-op membership
+        </h3>
+      </header>
+      <div
+        className="coop-c-membershipmodule__body"
+      >
+        Choose your offers, check your balance and help your community
+      </div>
+      <div
+        className="coop-c-membershipmodule__links"
+      >
+        <ul
+          className="coop-c-membershipmodule__list"
+        />
+      </div>
+    </article>
+    <div
+      className="coop-c-membershipmodule__media"
+    >
+      <svg
+        aria-hidden="true"
+        className="coop-c-membershipmodule__graphic"
+        focusable="false"
+        viewBox="0 0 150 224"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="coop-c-membershipmodule__card"
+          d="M145 224H5c-2.76 0-5-2.24-5-5V5c0-2.76 2.24-5 5-5h140c2.76 0 5 2.24 5 5v214c0 2.76-2.24 5-5 5z"
+        />
+        <path
+          className="coop-c-membershipmodule__logo"
+          d="M122.24 34.91c-1.36-4.34-4.62-7.87-8.82-9.5a39.794 39.794 0 00-26.34 0c-4.34 1.63-7.6 5.16-8.82 9.5a40.272 40.272 0 000 21.99c1.36 4.34 4.62 7.87 8.82 9.5 4.21 1.49 8.69 2.31 13.17 2.17 4.48 0 8.96-.81 13.17-2.17 4.34-1.63 7.6-5.16 8.82-9.5.95-3.67 1.49-7.33 1.49-11s-.54-7.33-1.49-10.99zM108.67 51.2c-.68 2.31-2.72 4.07-5.16 4.62-2.31.41-4.62.41-6.79 0-2.44-.41-4.34-2.17-5.16-4.62a17.98 17.98 0 010-10.72c.68-2.31 2.72-4.07 5.16-4.62 2.31-.41 4.62-.41 6.79 0 2.44.41 4.34 2.17 5.16 4.62.54 1.76.81 3.67.81 5.43s-.27 3.66-.81 5.29zM71.61 83.64c-1.36-4.34-4.62-7.87-8.82-9.5a39.794 39.794 0 00-26.34 0c-4.34 1.63-7.6 5.16-8.82 9.5a40.272 40.272 0 000 21.99c1.36 4.34 4.62 7.87 8.82 9.5a39.794 39.794 0 0026.34 0c4.21-1.49 7.6-5.02 8.82-9.5a40.462 40.462 0 000-21.99zm-13.58 16.43c-.68 2.31-2.72 4.07-5.16 4.62-2.31.41-4.62.41-6.79 0-2.44-.41-4.34-2.17-5.16-4.62a17.98 17.98 0 010-10.72c.68-2.31 2.72-4.07 5.16-4.62 2.31-.41 4.62-.41 6.79 0 2.44.41 4.34 2.17 5.16 4.62.54 1.76.81 3.53.81 5.43.01 1.76-.27 3.66-.81 5.29zm.82-54.3H73.1c0-3.67-.54-7.33-1.49-10.86-1.36-4.34-4.62-7.87-8.82-9.5a39.794 39.794 0 00-26.34 0c-4.34 1.63-7.6 5.16-8.82 9.5a40.272 40.272 0 000 21.99c1.36 4.34 4.62 7.87 8.82 9.5 4.21 1.49 8.69 2.17 13.17 2.17s8.96-.81 13.17-2.17c4.34-1.63 7.6-5.16 8.82-9.5.14-.54.27-1.22.54-1.9l-13.44-6.24c-.14.81-.27 1.63-.54 2.44-.68 2.31-2.72 4.07-5.16 4.62-2.31.41-4.62.41-6.79 0-2.44-.41-4.34-2.17-5.16-4.62a17.98 17.98 0 010-10.72c.68-2.31 2.72-4.07 5.16-4.62 2.31-.41 4.62-.41 6.79 0 2.44.41 4.34 2.17 5.16 4.62.4 1.76.68 3.52.68 5.29m19.14 37.6c-.95 3.53-1.49 7.19-1.49 11v32.17h14.25V94.37c0-1.76.27-3.67.81-5.29.68-2.31 2.72-4.07 5.16-4.62 2.31-.41 4.62-.41 6.79 0 2.44.41 4.34 2.17 5.16 4.62a17.98 17.98 0 010 10.72c-.68 2.31-2.72 4.07-5.02 4.62-2.31.41-4.62.41-6.79 0-.41-.14-.95-.27-1.36-.41l4.89 13.3c4.48 0 8.96-.81 13.17-2.17 4.34-1.63 7.6-5.16 8.82-9.5 2.04-7.19 2.04-14.8 0-21.99-1.36-4.34-4.62-7.87-8.82-9.5a39.794 39.794 0 00-26.34 0c-4.62 1.35-7.88 4.88-9.23 9.22"
+        />
+      </svg>
+      <div
+        className="coop-c-membershipmodule__connector"
+      >
+        <svg
+          aria-hidden="true"
+          className="coop-c-membershipmodule__svg"
+          focusable="false"
+          viewBox="0 0 288 304"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            className="coop-c-membershipmodule__path"
+            d="M0 4h72c39.76 0 72 32.24 72 72v152c0 39.77 32.24 72 72 72h72"
+            strokeWidth="8"
+            vectorEffect="non-scaling-stroke"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</aside>
+`;
+
+exports[`MembershipBanner should render with btn 1`] = `
+<aside
+  className="coop-c-membershipmodule"
+>
+  <div
+    className="coop-c-membershipmodule__inner coop-u-clearfix"
+  >
+    <article
+      className="coop-c-membershipmodule__content"
+    >
+      <header
+        className="coop-c-membershipmodule__header"
+      >
+        <h3
+          className="coop-c-membershipmodule__title"
+        >
+          title
+        </h3>
+      </header>
+      <div
+        className="coop-c-membershipmodule__body"
+      >
+        body
+      </div>
+      <div
+        className="coop-c-membershipmodule__btns"
+      >
+        <p>
+          <a
+            className="coop-btn coop-btn--primary"
+            data-contentparent="Become a member"
+            data-contenttype="Membership module"
+            data-linktext="Become a Co-op Member"
+            href="https://membership.coop.co.uk/register"
+          >
+            Become a Co-op Member
+          </a>
+        </p>
+      </div>
+      <div
+        className="coop-c-membershipmodule__links"
+      >
+        <ul
+          className="coop-c-membershipmodule__list"
+        />
+      </div>
+    </article>
+    <div
+      className="coop-c-membershipmodule__media"
+    >
+      <svg
+        aria-hidden="true"
+        className="coop-c-membershipmodule__graphic"
+        focusable="false"
+        viewBox="0 0 150 224"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="coop-c-membershipmodule__card"
+          d="M145 224H5c-2.76 0-5-2.24-5-5V5c0-2.76 2.24-5 5-5h140c2.76 0 5 2.24 5 5v214c0 2.76-2.24 5-5 5z"
+        />
+        <path
+          className="coop-c-membershipmodule__logo"
+          d="M122.24 34.91c-1.36-4.34-4.62-7.87-8.82-9.5a39.794 39.794 0 00-26.34 0c-4.34 1.63-7.6 5.16-8.82 9.5a40.272 40.272 0 000 21.99c1.36 4.34 4.62 7.87 8.82 9.5 4.21 1.49 8.69 2.31 13.17 2.17 4.48 0 8.96-.81 13.17-2.17 4.34-1.63 7.6-5.16 8.82-9.5.95-3.67 1.49-7.33 1.49-11s-.54-7.33-1.49-10.99zM108.67 51.2c-.68 2.31-2.72 4.07-5.16 4.62-2.31.41-4.62.41-6.79 0-2.44-.41-4.34-2.17-5.16-4.62a17.98 17.98 0 010-10.72c.68-2.31 2.72-4.07 5.16-4.62 2.31-.41 4.62-.41 6.79 0 2.44.41 4.34 2.17 5.16 4.62.54 1.76.81 3.67.81 5.43s-.27 3.66-.81 5.29zM71.61 83.64c-1.36-4.34-4.62-7.87-8.82-9.5a39.794 39.794 0 00-26.34 0c-4.34 1.63-7.6 5.16-8.82 9.5a40.272 40.272 0 000 21.99c1.36 4.34 4.62 7.87 8.82 9.5a39.794 39.794 0 0026.34 0c4.21-1.49 7.6-5.02 8.82-9.5a40.462 40.462 0 000-21.99zm-13.58 16.43c-.68 2.31-2.72 4.07-5.16 4.62-2.31.41-4.62.41-6.79 0-2.44-.41-4.34-2.17-5.16-4.62a17.98 17.98 0 010-10.72c.68-2.31 2.72-4.07 5.16-4.62 2.31-.41 4.62-.41 6.79 0 2.44.41 4.34 2.17 5.16 4.62.54 1.76.81 3.53.81 5.43.01 1.76-.27 3.66-.81 5.29zm.82-54.3H73.1c0-3.67-.54-7.33-1.49-10.86-1.36-4.34-4.62-7.87-8.82-9.5a39.794 39.794 0 00-26.34 0c-4.34 1.63-7.6 5.16-8.82 9.5a40.272 40.272 0 000 21.99c1.36 4.34 4.62 7.87 8.82 9.5 4.21 1.49 8.69 2.17 13.17 2.17s8.96-.81 13.17-2.17c4.34-1.63 7.6-5.16 8.82-9.5.14-.54.27-1.22.54-1.9l-13.44-6.24c-.14.81-.27 1.63-.54 2.44-.68 2.31-2.72 4.07-5.16 4.62-2.31.41-4.62.41-6.79 0-2.44-.41-4.34-2.17-5.16-4.62a17.98 17.98 0 010-10.72c.68-2.31 2.72-4.07 5.16-4.62 2.31-.41 4.62-.41 6.79 0 2.44.41 4.34 2.17 5.16 4.62.4 1.76.68 3.52.68 5.29m19.14 37.6c-.95 3.53-1.49 7.19-1.49 11v32.17h14.25V94.37c0-1.76.27-3.67.81-5.29.68-2.31 2.72-4.07 5.16-4.62 2.31-.41 4.62-.41 6.79 0 2.44.41 4.34 2.17 5.16 4.62a17.98 17.98 0 010 10.72c-.68 2.31-2.72 4.07-5.02 4.62-2.31.41-4.62.41-6.79 0-.41-.14-.95-.27-1.36-.41l4.89 13.3c4.48 0 8.96-.81 13.17-2.17 4.34-1.63 7.6-5.16 8.82-9.5 2.04-7.19 2.04-14.8 0-21.99-1.36-4.34-4.62-7.87-8.82-9.5a39.794 39.794 0 00-26.34 0c-4.62 1.35-7.88 4.88-9.23 9.22"
+        />
+      </svg>
+      <div
+        className="coop-c-membershipmodule__connector"
+      >
+        <svg
+          aria-hidden="true"
+          className="coop-c-membershipmodule__svg"
+          focusable="false"
+          viewBox="0 0 288 304"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            className="coop-c-membershipmodule__path"
+            d="M0 4h72c39.76 0 72 32.24 72 72v152c0 39.77 32.24 72 72 72h72"
+            strokeWidth="8"
+            vectorEffect="non-scaling-stroke"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</aside>
+`;
+
+exports[`MembershipBanner should render with links 1`] = `
+<aside
+  className="coop-c-membershipmodule"
+>
+  <div
+    className="coop-c-membershipmodule__inner coop-u-clearfix"
+  >
+    <article
+      className="coop-c-membershipmodule__content"
+    >
+      <header
+        className="coop-c-membershipmodule__header"
+      >
+        <h3
+          className="coop-c-membershipmodule__title"
+        >
+          title
+        </h3>
+      </header>
+      <div
+        className="coop-c-membershipmodule__body"
+      >
+        body
+      </div>
+      <div
+        className="coop-c-membershipmodule__links"
+      >
+        <ul
+          className="coop-c-membershipmodule__list"
+        >
+          <li
+            className="coop-c-membershipmodule__item"
+          >
+            <a
+              className="coop-c-membershipmodule__link"
+              data-contentparent="Become a member"
+              data-contenttype="Membership module"
+              data-linktext="Add a missed receipt"
+              href="https://membership.coop.co.uk/claim-rewards"
+            >
+              Add a missed receipt
+            </a>
+          </li>
+          <li
+            className="coop-c-membershipmodule__item"
+          >
+            <a
+              className="coop-c-membershipmodule__link"
+              data-contentparent="Become a member"
+              data-contenttype="Membership module"
+              data-linktext="Get a replacement card"
+              href="https://membership.coop.co.uk"
+            >
+              Get a replacement card
+            </a>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <div
+      className="coop-c-membershipmodule__media"
+    >
+      <svg
+        aria-hidden="true"
+        className="coop-c-membershipmodule__graphic"
+        focusable="false"
+        viewBox="0 0 150 224"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="coop-c-membershipmodule__card"
+          d="M145 224H5c-2.76 0-5-2.24-5-5V5c0-2.76 2.24-5 5-5h140c2.76 0 5 2.24 5 5v214c0 2.76-2.24 5-5 5z"
+        />
+        <path
+          className="coop-c-membershipmodule__logo"
+          d="M122.24 34.91c-1.36-4.34-4.62-7.87-8.82-9.5a39.794 39.794 0 00-26.34 0c-4.34 1.63-7.6 5.16-8.82 9.5a40.272 40.272 0 000 21.99c1.36 4.34 4.62 7.87 8.82 9.5 4.21 1.49 8.69 2.31 13.17 2.17 4.48 0 8.96-.81 13.17-2.17 4.34-1.63 7.6-5.16 8.82-9.5.95-3.67 1.49-7.33 1.49-11s-.54-7.33-1.49-10.99zM108.67 51.2c-.68 2.31-2.72 4.07-5.16 4.62-2.31.41-4.62.41-6.79 0-2.44-.41-4.34-2.17-5.16-4.62a17.98 17.98 0 010-10.72c.68-2.31 2.72-4.07 5.16-4.62 2.31-.41 4.62-.41 6.79 0 2.44.41 4.34 2.17 5.16 4.62.54 1.76.81 3.67.81 5.43s-.27 3.66-.81 5.29zM71.61 83.64c-1.36-4.34-4.62-7.87-8.82-9.5a39.794 39.794 0 00-26.34 0c-4.34 1.63-7.6 5.16-8.82 9.5a40.272 40.272 0 000 21.99c1.36 4.34 4.62 7.87 8.82 9.5a39.794 39.794 0 0026.34 0c4.21-1.49 7.6-5.02 8.82-9.5a40.462 40.462 0 000-21.99zm-13.58 16.43c-.68 2.31-2.72 4.07-5.16 4.62-2.31.41-4.62.41-6.79 0-2.44-.41-4.34-2.17-5.16-4.62a17.98 17.98 0 010-10.72c.68-2.31 2.72-4.07 5.16-4.62 2.31-.41 4.62-.41 6.79 0 2.44.41 4.34 2.17 5.16 4.62.54 1.76.81 3.53.81 5.43.01 1.76-.27 3.66-.81 5.29zm.82-54.3H73.1c0-3.67-.54-7.33-1.49-10.86-1.36-4.34-4.62-7.87-8.82-9.5a39.794 39.794 0 00-26.34 0c-4.34 1.63-7.6 5.16-8.82 9.5a40.272 40.272 0 000 21.99c1.36 4.34 4.62 7.87 8.82 9.5 4.21 1.49 8.69 2.17 13.17 2.17s8.96-.81 13.17-2.17c4.34-1.63 7.6-5.16 8.82-9.5.14-.54.27-1.22.54-1.9l-13.44-6.24c-.14.81-.27 1.63-.54 2.44-.68 2.31-2.72 4.07-5.16 4.62-2.31.41-4.62.41-6.79 0-2.44-.41-4.34-2.17-5.16-4.62a17.98 17.98 0 010-10.72c.68-2.31 2.72-4.07 5.16-4.62 2.31-.41 4.62-.41 6.79 0 2.44.41 4.34 2.17 5.16 4.62.4 1.76.68 3.52.68 5.29m19.14 37.6c-.95 3.53-1.49 7.19-1.49 11v32.17h14.25V94.37c0-1.76.27-3.67.81-5.29.68-2.31 2.72-4.07 5.16-4.62 2.31-.41 4.62-.41 6.79 0 2.44.41 4.34 2.17 5.16 4.62a17.98 17.98 0 010 10.72c-.68 2.31-2.72 4.07-5.02 4.62-2.31.41-4.62.41-6.79 0-.41-.14-.95-.27-1.36-.41l4.89 13.3c4.48 0 8.96-.81 13.17-2.17 4.34-1.63 7.6-5.16 8.82-9.5 2.04-7.19 2.04-14.8 0-21.99-1.36-4.34-4.62-7.87-8.82-9.5a39.794 39.794 0 00-26.34 0c-4.62 1.35-7.88 4.88-9.23 9.22"
+        />
+      </svg>
+      <div
+        className="coop-c-membershipmodule__connector"
+      >
+        <svg
+          aria-hidden="true"
+          className="coop-c-membershipmodule__svg"
+          focusable="false"
+          viewBox="0 0 288 304"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            className="coop-c-membershipmodule__path"
+            d="M0 4h72c39.76 0 72 32.24 72 72v152c0 39.77 32.24 72 72 72h72"
+            strokeWidth="8"
+            vectorEffect="non-scaling-stroke"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</aside>
+`;

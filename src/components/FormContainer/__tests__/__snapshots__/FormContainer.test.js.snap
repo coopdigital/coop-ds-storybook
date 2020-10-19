@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormContainer should render default FormContainer 1`] = `
+<form
+  className="coop-form"
+/>
+`;
+
+exports[`FormContainer should work with props 1`] = `
+<form
+  className="coop-form newClass"
+  id="test"
+  onClick={[Function]}
+  onSubmit={[Function]}
+>
+  Form Body
+</form>
+`;

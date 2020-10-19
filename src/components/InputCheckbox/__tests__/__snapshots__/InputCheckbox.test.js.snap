@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputCheckbox should render correctly 1`] = `
+<div
+  className="coop-c-form-choice"
+>
+  <input
+    checked={false}
+    className="coop-form__field coop-form__checkbox coop-c-form-choice__input coop-c-form-choice__input--checkbox"
+    disabled={false}
+    id="test"
+    label="test"
+    name="test"
+    onChange={[Function]}
+    type="checkbox"
+    value={1}
+  />
+  <label
+    className="coop-form__label coop-c-form-choice__label"
+    htmlFor="test"
+  >
+    test
+  </label>
+</div>
+`;

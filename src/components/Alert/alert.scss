@@ -1,0 +1,6 @@
+@import "@coopdigital/component-notification/dist/notification.css";
+
+.coop-c-notification--alert {
+  background-color: var(--color-orange-alert-light);
+  border-left-color: var(--color-orange-alert);
+}

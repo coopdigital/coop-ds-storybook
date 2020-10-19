@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GridItem should allow children 1`] = `
+<div
+  className="coop-l-grid__item"
+>
+  test
+</div>
+`;
+
+exports[`GridItem should allow collapse attribute 1`] = `
+<div
+  className="coop-l-grid__item coop-l-grid__item--collapse"
+/>
+`;
+
+exports[`GridItem should allow size and offset attributes 1`] = `
+Array [
+  <div
+    className="coop-l-grid__item coop-l-grid__item--6"
+  />,
+  <div
+    className="coop-l-grid__item coop-l-grid__item--offset-2"
+  />,
+  <div
+    className="coop-l-grid__item coop-l-grid__item--small-6"
+  />,
+  <div
+    className="coop-l-grid__item coop-l-grid__item--small-2"
+  />,
+  <div
+    className="coop-l-grid__item coop-l-grid__item--medium-6"
+  />,
+  <div
+    className="coop-l-grid__item coop-l-grid__item--medium-offset-2"
+  />,
+  <div
+    className="coop-l-grid__item coop-l-grid__item--large-6"
+  />,
+  <div
+    className="coop-l-grid__item coop-l-grid__item--large-offset-2"
+  />,
+  <div
+    className="coop-l-grid__item coop-l-grid__item--xlarge-6"
+  />,
+  <div
+    className="coop-l-grid__item coop-l-grid__item--xlarge-offset-2"
+  />,
+  <div
+    className="coop-l-grid__item coop-l-grid__item--6 coop-l-grid__item--offset-4 coop-l-grid__item--small-5 coop-l-grid__item--small-3 coop-l-grid__item--medium-4 coop-l-grid__item--medium-offset-2 coop-l-grid__item--large-3 coop-l-grid__item--large-offset-1 coop-l-grid__item--xlarge-2 coop-l-grid__item--xlarge-offset-1"
+  />,
+]
+`;
+
+exports[`GridItem should render correctly 1`] = `
+<div
+  className="coop-l-grid__item"
+/>
+`;

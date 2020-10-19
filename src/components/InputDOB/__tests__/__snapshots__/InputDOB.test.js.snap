@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputDOB should render correctly 1`] = `
+<div
+  className="coop-form__row"
+>
+  <fieldset
+    aria-describedby="test-hint test-error"
+  >
+    <legend
+      className="coop-form__label"
+    >
+      Date of Birth
+    </legend>
+    <p
+      className="coop-form__hint"
+      id="test-hint"
+    >
+      01 01 1990
+    </p>
+    <div
+      className="coop-form__columns"
+    >
+      <div
+        className="coop-form__column"
+      >
+        <label
+          className="coop-form__label"
+          htmlFor="test-day"
+        >
+          Day
+        </label>
+        <input
+          autoComplete="bday-day"
+          className="coop-form__field coop-form__input coop-form__input--width-2"
+          id="test-day"
+          inputMode="numeric"
+          maxLength="2"
+          minLength="2"
+          name="test-day"
+          pattern="[0-9]*"
+          type="text"
+        />
+      </div>
+      <div
+        className="coop-form__column"
+      >
+        <label
+          className="coop-form__label"
+          htmlFor="test-month"
+        >
+          Month
+        </label>
+        <input
+          autoComplete="bday-month"
+          className="coop-form__field coop-form__input coop-form__input--width-2"
+          id="test-month"
+          inputMode="numeric"
+          maxLength="2"
+          minLength="2"
+          name="test-month"
+          pattern="[0-9]*"
+          type="text"
+        />
+      </div>
+      <div
+        className="coop-form__column"
+      >
+        <label
+          className="coop-form__label"
+          htmlFor="test-year"
+        >
+          Year
+        </label>
+        <input
+          autoComplete="bday-year"
+          className="coop-form__field coop-form__input coop-form__input--width-4"
+          id="test-year"
+          inputMode="numeric"
+          maxLength="4"
+          minLength="4"
+          name="test-year"
+          pattern="[0-9]*"
+          type="text"
+        />
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`InputDOB should render with errors correctly 1`] = `
+<div
+  className="coop-form__row"
+>
+  <fieldset
+    aria-describedby="test-hint test-error"
+  >
+    <legend
+      className="coop-form__label"
+    >
+      What is your date of birth?
+    </legend>
+    <p
+      className="coop-form__hint"
+      id="test-hint"
+    >
+      For example 21 12 2020
+    </p>
+    <div
+      className="coop-form__columns"
+    >
+      <div
+        className="coop-form__column"
+      >
+        <label
+          className="coop-form__label"
+          htmlFor="test-day"
+        >
+          Day
+        </label>
+        <input
+          autoComplete="bday-day"
+          className="coop-form__field coop-form__input coop-form__input--width-2"
+          id="test-day"
+          inputMode="numeric"
+          maxLength="2"
+          minLength="2"
+          name="test-day"
+          pattern="[0-9]*"
+          type="text"
+        />
+      </div>
+      <div
+        className="coop-form__column"
+      >
+        <label
+          className="coop-form__label"
+          htmlFor="test-month"
+        >
+          Month
+        </label>
+        <input
+          autoComplete="bday-month"
+          className="coop-form__field coop-form__input coop-form__input--width-2"
+          id="test-month"
+          inputMode="numeric"
+          maxLength="2"
+          minLength="2"
+          name="test-month"
+          pattern="[0-9]*"
+          type="text"
+        />
+      </div>
+      <div
+        className="coop-form__column"
+      >
+        <label
+          className="coop-form__label"
+          htmlFor="test-year"
+        >
+          Year
+        </label>
+        <input
+          autoComplete="bday-year"
+          className="coop-form__field coop-form__input coop-form__input--width-4"
+          id="test-year"
+          inputMode="numeric"
+          maxLength="4"
+          minLength="4"
+          name="test-year"
+          pattern="[0-9]*"
+          type="text"
+        />
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;

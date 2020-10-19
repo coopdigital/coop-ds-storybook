@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputRadio should render correctly 1`] = `
+<div
+  className="coop-c-form-choice"
+>
+  <input
+    checked={false}
+    className="coop-form__field coop-form__radio coop-c-form-choice__input coop-c-form-choice__input--radio-button"
+    disabled={false}
+    id="test"
+    name="test"
+    onChange={[Function]}
+    type="radio"
+    value={1}
+  />
+  <label
+    className="coop-form__label coop-c-form-choice__label"
+    htmlFor="test"
+  >
+    test
+  </label>
+</div>
+`;

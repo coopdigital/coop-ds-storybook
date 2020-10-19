@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormValidation should not render when hasErrors is false 1`] = `null`;
+
+exports[`FormValidation should render correctly 1`] = `
+<div
+  aria-labelledby="error-message-heading"
+  className="coop-c-message coop-c-message--error"
+  role="alert"
+  tabIndex="-1"
+>
+  <h2
+    className="coop-c-message__heading"
+    id="error-message-heading"
+  >
+    There’s a problem
+  </h2>
+  <p
+    className="coop-c-message__message"
+  >
+    Check the form. You must:
+  </p>
+  <ul
+    className="coop-c-message__list"
+  />
+</div>
+`;
+
+exports[`FormValidation should render with links 1`] = `
+<div
+  aria-labelledby="error-message-heading"
+  className="coop-c-message coop-c-message--error"
+  role="alert"
+  tabIndex="-1"
+>
+  <h2
+    className="coop-c-message__heading"
+    id="error-message-heading"
+  >
+    title
+  </h2>
+  <p
+    className="coop-c-message__message"
+  >
+    message
+  </p>
+  <ul
+    className="coop-c-message__list"
+  >
+    <li>
+      <a
+        className="coop-c-message__link coop-t-link"
+        href="#client-name"
+      >
+        enter your full name
+      </a>
+    </li>
+    <li>
+      <a
+        className="coop-c-message__link coop-t-link"
+        href="#client-email-address"
+      >
+        enter an email address
+      </a>
+    </li>
+  </ul>
+</div>
+`;

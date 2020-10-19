@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputCheckboxGroup should support hints and errors 1`] = `
+<div>
+  <div
+    className="coop-form__row"
+  >
+    <fieldset
+      aria-describedby="group-1-hint"
+      className="coop-c-form-choice"
+    >
+      <legend
+        className="coop-form__legend coop-c-form-choice__legend"
+      >
+        Checkbox Group with hint
+      </legend>
+      <p
+        className="coop-form__hint"
+        id="group-1-hint"
+      >
+        Hint message
+      </p>
+      <div
+        className="coop-c-form-choice"
+      >
+        <input
+          checked={false}
+          className="coop-form__field coop-form__checkbox coop-c-form-choice__input coop-c-form-choice__input--checkbox"
+          disabled={false}
+          id="checkbox-1"
+          label="Checkbox 1"
+          name="checkbox-1"
+          onChange={[Function]}
+          type="checkbox"
+          value={1}
+        />
+        <label
+          className="coop-form__label coop-c-form-choice__label"
+          htmlFor="checkbox-1"
+        >
+          Checkbox 1
+        </label>
+      </div>
+      <div
+        className="coop-c-form-choice"
+      >
+        <input
+          checked={false}
+          className="coop-form__field coop-form__checkbox coop-c-form-choice__input coop-c-form-choice__input--checkbox"
+          disabled={false}
+          id="checkbox-2"
+          label="Checkbox 2"
+          name="checkbox-2"
+          onChange={[Function]}
+          type="checkbox"
+          value={2}
+        />
+        <label
+          className="coop-form__label coop-c-form-choice__label"
+          htmlFor="checkbox-2"
+        >
+          Checkbox 2
+        </label>
+      </div>
+      <div
+        className="coop-c-form-choice"
+      >
+        <input
+          checked={false}
+          className="coop-form__field coop-form__checkbox coop-c-form-choice__input coop-c-form-choice__input--checkbox"
+          disabled={false}
+          id="checkbox-3"
+          label="Checkbox 3"
+          name="checkbox-3"
+          onChange={[Function]}
+          type="checkbox"
+          value={3}
+        />
+        <label
+          className="coop-form__label coop-c-form-choice__label"
+          htmlFor="checkbox-3"
+        >
+          Checkbox 3
+        </label>
+      </div>
+    </fieldset>
+  </div>
+  <div
+    className="coop-form__row"
+  >
+    <fieldset
+      aria-describedby="group-2-hint group-2-error"
+      className="coop-c-form-choice coop-form__invalid"
+    >
+      <legend
+        className="coop-form__legend coop-c-form-choice__legend"
+      >
+        Checkbox Group with hint and error
+      </legend>
+      <p
+        className="coop-form__hint"
+        id="group-2-hint"
+      >
+        Hint message
+      </p>
+      <p
+        className="coop-form__error"
+        id="group-2-error"
+      >
+        Error message
+      </p>
+      <div
+        className="coop-c-form-choice"
+      >
+        <input
+          checked={false}
+          className="coop-form__field coop-form__checkbox coop-c-form-choice__input coop-c-form-choice__input--checkbox"
+          disabled={false}
+          id="checkbox-4"
+          label="Checkbox 4"
+          name="checkbox-4"
+          onChange={[Function]}
+          type="checkbox"
+          value={4}
+        />
+        <label
+          className="coop-form__label coop-c-form-choice__label"
+          htmlFor="checkbox-4"
+        >
+          Checkbox 4
+        </label>
+      </div>
+      <div
+        className="coop-c-form-choice"
+      >
+        <input
+          checked={false}
+          className="coop-form__field coop-form__checkbox coop-c-form-choice__input coop-c-form-choice__input--checkbox"
+          disabled={false}
+          id="checkbox-5"
+          label="Checkbox 5"
+          name="checkbox-5"
+          onChange={[Function]}
+          type="checkbox"
+          value={5}
+        />
+        <label
+          className="coop-form__label coop-c-form-choice__label"
+          htmlFor="checkbox-5"
+        >
+          Checkbox 5
+        </label>
+      </div>
+      <div
+        className="coop-c-form-choice"
+      >
+        <input
+          checked={false}
+          className="coop-form__field coop-form__checkbox coop-c-form-choice__input coop-c-form-choice__input--checkbox"
+          disabled={false}
+          id="checkbox-6"
+          label="Checkbox 6"
+          name="checkbox-6"
+          onChange={[Function]}
+          type="checkbox"
+          value={6}
+        />
+        <label
+          className="coop-form__label coop-c-form-choice__label"
+          htmlFor="checkbox-6"
+        >
+          Checkbox 6
+        </label>
+      </div>
+    </fieldset>
+  </div>
+</div>
+`;

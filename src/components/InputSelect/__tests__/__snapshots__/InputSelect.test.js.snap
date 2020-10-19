@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputSelect should render correctly 1`] = `
+<div
+  className="coop-form__row"
+>
+  <select
+    aria-describedby="test-hint"
+    className="coop-form__field coop-form__select"
+    id="test"
+    name="test"
+  />
+</div>
+`;
+
+exports[`InputSelect should render props correctly 1`] = `
+<div
+  className="coop-form__row"
+>
+  <label
+    className="coop-form__label"
+    htmlFor="id"
+  >
+    With Label and Hint
+  </label>
+  <p
+    className="coop-form__hint"
+    id="id-hint"
+  >
+    This is an example hint
+  </p>
+  <p
+    className="coop-form__error"
+    id="id-error"
+  >
+    Error Message
+  </p>
+  <select
+    aria-describedby="id-hint"
+    className="coop-form__field coop-form__select coop-form__invalid"
+    id="id"
+    name="name"
+  >
+    <option
+      value="1"
+    >
+      one
+    </option>
+    <option
+      value="2"
+    >
+      two
+    </option>
+  </select>
+</div>
+`;

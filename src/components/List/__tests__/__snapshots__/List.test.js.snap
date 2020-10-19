@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List should render default List 1`] = `<ul />`;
+
+exports[`List should work with all variants 1`] = `
+<div>
+  <ul>
+    <li>
+      one
+    </li>
+    <li>
+      2
+    </li>
+    <li>
+      <div>
+        three
+      </div>
+    </li>
+  </ul>
+  <ol>
+    <li>
+      one
+    </li>
+    <li>
+      2
+    </li>
+    <li>
+      <div>
+        three
+      </div>
+    </li>
+  </ol>
+</div>
+`;
