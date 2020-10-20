@@ -1401,9 +1401,9 @@
     minimist "^1.2.0"
 
 "@coopdigital/component-notification@^1.0.25":
-  version "1.0.26"
-  resolved "https://registry.yarnpkg.com/@coopdigital/component-notification/-/component-notification-1.0.26.tgz#08972c972e8e61f73f34102757812833832a4153"
-  integrity sha512-9vJHqf9GfmA8PJ8/LbB5bosn/44fPLijc+4YEnXXhZvN5MP55ahsR+/Co8H1h51FXouihYY6rUHpKF02umkA9w==
+  version "1.0.27"
+  resolved "https://registry.yarnpkg.com/@coopdigital/component-notification/-/component-notification-1.0.27.tgz#de3bc15c19020530d390b4be13557afc85850bdf"
+  integrity sha512-Y9dHHp2zVkKF3aHEvrl5YjEyYBAbJxYuIkX5Bf6y9WDZQXFAOSZ/0inVWMcBXfMtsIbXvedTPOKIoQKg82ZZMQ==
 
 "@coopdigital/css-foundations@^5.3.1":
   version "5.3.1"
@@ -1421,10 +1421,15 @@
     "@coopdigital/foundations-vars" "^3.2.2"
     normalize.css "^8.0.1"
 
-"@coopdigital/foundations-buttons@^2.2.3", "@coopdigital/foundations-buttons@^2.2.4":
+"@coopdigital/foundations-buttons@^2.2.3":
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/@coopdigital/foundations-buttons/-/foundations-buttons-2.2.5.tgz#e22c8dd9b895996b8fe1a33d790fbb7618183076"
   integrity sha512-BkqEkUrFxukAQclQDCfEU3wEpqksJxYJ58UdrbPlR3FgAqEi0a84CwU0Bx9FwMxDcgKaBH+KnTuk4ELPo+nyDw==
+
+"@coopdigital/foundations-buttons@^2.2.4":
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/@coopdigital/foundations-buttons/-/foundations-buttons-2.2.6.tgz#f8e0971d7168a2b6e9aec11392fe744b8033ee4f"
+  integrity sha512-R/9ldhXP7yvPXuY+VPxzofB302PTCoAHFalJ6oI18MVoWSjeUZUqNS/NWG0F11vY0OkItrXfUeneoo0HVudfyg==
 
 "@coopdigital/foundations-colors@^2.1.17":
   version "2.2.1"
@@ -1436,35 +1441,55 @@
   resolved "https://registry.yarnpkg.com/@coopdigital/foundations-forms/-/foundations-forms-4.0.10.tgz#063db0f895818d82bbbf19d6d3d111955235b9a1"
   integrity sha512-k9E6n/fvIyJRrghlOWStOEQM00jHXUI17hxxzLJVXl6HOB/9mmpmrzImkl3jNA9fD5FXCV3P/RNjMovRTng7aQ==
 
-"@coopdigital/foundations-global@^3.1.16", "@coopdigital/foundations-global@^3.1.17":
+"@coopdigital/foundations-global@^3.1.16":
   version "3.1.18"
   resolved "https://registry.yarnpkg.com/@coopdigital/foundations-global/-/foundations-global-3.1.18.tgz#7ae6fa1996ec992458657400bf6bda5843711574"
   integrity sha512-2yMV4FD7STAHn2rvBUUM+cjbFHhpQ5pBQsmXoXMmH1fonIT+Ibv/GofsszQU1TYLxcR1ETqKbRiX4DgCWfPc2Q==
 
-"@coopdigital/foundations-grid@^2.0.8":
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/@coopdigital/foundations-grid/-/foundations-grid-2.0.10.tgz#38f206072df7f139aba0315b01a55533150ad4a9"
-  integrity sha512-UU/PqVVB+tZdYScgvchb4NROgSTHaNhDr9gO/FKqyDnLFuF+FS6zI08cr3W69JlDHiw/GMDXYbQd6s2MuiATqQ==
+"@coopdigital/foundations-global@^3.1.17":
+  version "3.1.19"
+  resolved "https://registry.yarnpkg.com/@coopdigital/foundations-global/-/foundations-global-3.1.19.tgz#5262b05ea06d3344fdad5601d01d0bef9e9c5a4e"
+  integrity sha512-UMxF4p0/5glAvWGulS37RnB9iqh05dniszV2eK24MxgBCVFwjyqtHOy4a844dLJwcYmmVcIAzTjVCdVUvsbo6g==
 
-"@coopdigital/foundations-layout@^3.2.2", "@coopdigital/foundations-layout@^3.2.3":
+"@coopdigital/foundations-grid@^2.0.8":
+  version "2.0.11"
+  resolved "https://registry.yarnpkg.com/@coopdigital/foundations-grid/-/foundations-grid-2.0.11.tgz#378bb3be859c606e3dfabfe5b846cedea7f9b86e"
+  integrity sha512-4lMLOuLJeuER4prtNe0t5Oh+YqH6r+8As482TIWyeLaC5GtuS1hiPTzGE7Xr3fq9hGOSwuaidcuzNAdy9QITEw==
+
+"@coopdigital/foundations-layout@^3.2.2":
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/@coopdigital/foundations-layout/-/foundations-layout-3.2.4.tgz#092594ec94e0a9b53ae4e7486b675ec3156bdf01"
   integrity sha512-YbNPcjNYjjYLhssaxAJolZAn/3P/V5ajV1Mv5W0RntLuDv0McsXGyhmEYSsqrtzdv5BO6qCvvbmi749ia5yM3g==
+
+"@coopdigital/foundations-layout@^3.2.3":
+  version "3.2.5"
+  resolved "https://registry.yarnpkg.com/@coopdigital/foundations-layout/-/foundations-layout-3.2.5.tgz#10f1c0207b970e2d9cf93c6fe9ae121e30e52133"
+  integrity sha512-xdfRKzzk1w8ZZN1PX6/CIpEmqHSPO/6nlXLtp49I3aGGOIqIqw12hyq+nLqmfWUNKBdcinjc2q0DFtzFjr7GLg==
 
 "@coopdigital/foundations-tables@^2.1.16":
   version "2.1.18"
   resolved "https://registry.yarnpkg.com/@coopdigital/foundations-tables/-/foundations-tables-2.1.18.tgz#1f3b2c9b1f9ad78d8e5742b59371462efda74304"
   integrity sha512-+vQgVPV7wHM6ayhnZKr9CuZOIhLmpT+3tZDCgL64VGNBKmchC0v25hBSwGCp+fo0oImfiDjUw7++OwD948eaeA==
 
-"@coopdigital/foundations-typography@^4.1.18", "@coopdigital/foundations-typography@^4.1.19":
+"@coopdigital/foundations-typography@^4.1.18":
   version "4.1.21"
   resolved "https://registry.yarnpkg.com/@coopdigital/foundations-typography/-/foundations-typography-4.1.21.tgz#edbcf21b2bc4bb693af65619a563e06e0af4459c"
   integrity sha512-vUQezeh4WmUNZ8LwK46yOjMnRZRkN+kEXfc7VphT9kN7OSXKVyVj/zlf/f2mPAbUFljIDYz/9IWl86rpovkpNA==
 
-"@coopdigital/foundations-vars@^3.2.2", "@coopdigital/foundations-vars@^3.3.0":
+"@coopdigital/foundations-typography@^4.1.19":
+  version "4.1.22"
+  resolved "https://registry.yarnpkg.com/@coopdigital/foundations-typography/-/foundations-typography-4.1.22.tgz#6182fa0397e45f0b5588cff94533297f651dba45"
+  integrity sha512-8lRraNEVcXdemitB61VeWPgPJzB0xr/4cj6PubfV4pW5vbavEuws4ySfgcUB5j2VjIIth5ID7G+4diHsMUYKIw==
+
+"@coopdigital/foundations-vars@^3.2.2":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@coopdigital/foundations-vars/-/foundations-vars-3.3.1.tgz#9e3e39783a56f9660fe80ae51c30751ba34daf01"
   integrity sha512-bnk3+5YLmyOgga2154GmwiFd5TUkjJy30M6ZS17d3EfJRM8sGMWq35C5SYkg3piA2qKTC1NGP/CvoUg2G/DcGw==
+
+"@coopdigital/foundations-vars@^3.3.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@coopdigital/foundations-vars/-/foundations-vars-3.4.0.tgz#eff773b821cee7304133ef837b0b1b66bd878c55"
+  integrity sha512-tlPyY9PSqDTP9mZ2v1l9ts51YDaCCwm2EzIs9FhCSYw7lxtwM8dp9Rfch9lKf/V80f35PJn8F0RGr5f4U/tgXw==
 
 "@coopdigital/shared-component--hero@^2.1.18":
   version "2.1.18"
@@ -1472,14 +1497,14 @@
   integrity sha512-oILxrZUJmJgWSpskhbynKNFrgljDwCF3mtHgoHomKlD8XvAhF3R3SabyDkWA5HxbjQaGHhUOEw678irFBFDnAA==
 
 "@coopdigital/shared-component--image@^2.1.18":
-  version "2.1.19"
-  resolved "https://registry.yarnpkg.com/@coopdigital/shared-component--image/-/shared-component--image-2.1.19.tgz#f0d1f399cbd514086d04964e8959678b535761d0"
-  integrity sha512-Kcf/JnBarEq/PkU+g1MnGwRurSQcGkIVopdUyS6jYVGf8HaCmRmL6/i3AAn1HMt/MQ8EkClcHBj8wFzQZE8Uzw==
+  version "2.1.20"
+  resolved "https://registry.yarnpkg.com/@coopdigital/shared-component--image/-/shared-component--image-2.1.20.tgz#6fdf624d5c1e087dacb316360a8f6ff21d148510"
+  integrity sha512-pSPxXwdkKNp02/SqZi8/i3MI6556lZI0Px93dKvG7TtCvFVy1+EfuOL3DLIOWrK29Gl6oYbXOzVH5yyUaVE+Rg==
 
 "@coopdigital/shared-component--membership@^3.0.6":
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/@coopdigital/shared-component--membership/-/shared-component--membership-3.0.7.tgz#17736b23d43a74669456f9396b29146aa87a2e51"
-  integrity sha512-zHHpFb+6h4hyGJdgo1tYIWbfo7nn1lEVWijLkh40uJWoNh2zFDw+47PUtKuV6OXeNEq1I2fBnW0DwP4bUHPfug==
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/@coopdigital/shared-component--membership/-/shared-component--membership-3.0.8.tgz#7454cb212054cd256cd09abb39c9153415cf826f"
+  integrity sha512-1ShATn8RceN5wNh1UciU+pxWVEpMNh5Bg4PUSw56GI5btWGUZHbcBqkaavrGqMYQmSqBBo1o6l9BSNUp31CBxA==
 
 "@emotion/cache@^10.0.27":
   version "10.0.29"
