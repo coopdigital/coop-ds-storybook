@@ -1,6 +1,6 @@
 <img src="./coop.png" width="116" />
 
-# Coop Design System - Unofficial React UI Library
+# Coop Design System - Official React UI Library
 
 ## Tech stack
 
