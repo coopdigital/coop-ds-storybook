@@ -7,9 +7,6 @@
     "url": "https://github.com/jiebinsu/cui-react"
   },
   "license": "ISC",
-  "author": {
-    "name": "Jiebin Su"
-  },
   "main": "dist/index.js",
   "files": [
     "dist",
