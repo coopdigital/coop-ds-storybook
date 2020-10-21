@@ -15,11 +15,11 @@
   "scripts": {
     "build": "build-storybook",
     "build:docs": "build-storybook --docs",
-    "build:package": "npm clean && npm webpack && cross-env BABEL_ENV=production babel src -d dist",
+    "build:package": "yarn clean && yarn webpack && cross-env BABEL_ENV=production babel src -d dist",
     "build:storybook": "build-storybook",
     "clean": "rm -rf dist",
     "css:package": "./scripts/package.sh",
-    "lint": "npm lint:js && npm lint:package",
+    "lint": "yarn lint:js && yarn lint:package",
     "lint:js": "cross-env NODE_ENV=production eslint --cache --cache-location=.cache/eslint --ext .js,.jsx,.html,.ts,.tsx,.mjs --report-unused-disable-directives",
     "lint:package": "sort-package-json",
     "start": "build-storybook",
@@ -30,13 +30,13 @@
   },
   "lint-staged": {
     "*.html": [
-      "npm lint:js --fix"
+      "yarn lint:js --fix"
     ],
     "*.js": [
-      "npm lint:js --fix"
+      "yarn lint:js --fix"
     ],
     "package.json": [
-      "npm lint:package"
+      "yarn lint:package"
     ]
   },
   "dependencies": {
@@ -116,5 +116,9 @@
   "peerDependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=8.10.0",
+    "yarn": ">=1.3.2"
   }
 }
