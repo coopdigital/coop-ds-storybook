@@ -87,7 +87,7 @@ Signpost.defaultProps = {
 Signpost.propTypes = {
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
-  mediaComponent: PropTypes.node,
+  mediaComponent: PropTypes.string.node,
 };
 
 export default Signpost;

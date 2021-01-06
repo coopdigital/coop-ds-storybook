@@ -1797,6 +1797,11 @@
   resolved "https://registry.yarnpkg.com/@coopdigital/shared-component--membership/-/shared-component--membership-3.0.8.tgz#7454cb212054cd256cd09abb39c9153415cf826f"
   integrity sha512-1ShATn8RceN5wNh1UciU+pxWVEpMNh5Bg4PUSw56GI5btWGUZHbcBqkaavrGqMYQmSqBBo1o6l9BSNUp31CBxA==
 
+"@coopdigital/shared-component--signpost@^2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@coopdigital/shared-component--signpost/-/shared-component--signpost-2.4.1.tgz#0ccf654d4ffdd287525ec05d539c8c1afeedf1fa"
+  integrity sha512-Xlams1lOXfgbTtTVyVpmFAbuSFgGGp2m4SOZ+ALPXd5uwVMHAXY2RzJarQxzVXNTRdDRNBDtZyJYIgAjnBGP9g==
+
 "@emotion/cache@^10.0.27":
   version "10.0.29"
   resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-10.0.29.tgz#87e7e64f412c060102d589fe7c6dc042e6f9d1e0"
