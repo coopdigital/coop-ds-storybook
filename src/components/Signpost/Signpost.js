@@ -3,74 +3,91 @@ import PropTypes from "prop-types";
 import classNames from "../../utils/classNames";
 import "./signpost.scss";
 
-const Signpost = ({
-  title,
-  content,
-  squircleBg,
-  pullContent,
-  ctaComponent,
-  mediaComponent,
-  children,
-}) => {
-  const rootClasses = classNames("coop-c-hero", [
-    squircleBg && "coop-c-hero--squircle",
+const Signpost = ({ title, url, mediaComponent }) => {
+  const rootClasses = classNames("coop-c-signpost", [
     mediaComponent && "coop-c-hero--media",
-    pullContent && "coop-c-hero--pull",
   ]);
 
   return (
     <>
       <div className={rootClasses}>
-        <div className="coop-c-hero__inner">
-          <h1 className="coop-c-hero__title">{title}</h1>
+        <a
+          href={url}
+          class="coop-c-signpost__link"
+          data-contenttype=""
+          data-contentparent=""
+          data-linktext=""
+        >
           {mediaComponent && (
-            <div className="coop-c-hero__media">{mediaComponent}</div>
+            <figure class="coop-c-signpost__media">
+              <picture class="coop-c-signpost__image">
+                <source
+                  media="(min-width: 48em)"
+                  srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=360&amp;h=203 1x,
+        //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=720&amp;h=406 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 37.5em)"
+                  srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423 1x,
+        //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=1502&amp;h=846 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 25.9375em)"
+                  srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=583&amp;h=329 1x,
+        //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=webp&amp;fit=thumb&amp;q=60&amp;w=1166&amp;h=658 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 48em)"
+                  srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=360&amp;h=203 1x,
+        //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=720&amp;h=406 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 37.5em)"
+                  srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=751&amp;h=423 1x,
+        //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=1502&amp;h=846 2x"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(min-width: 25.9375em)"
+                  srcset="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=583&amp;h=329 1x,
+        //images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;fl=progressive&amp;q=60&amp;w=1166&amp;h=658 2x"
+                  type="image/jpeg"
+                />
+                <img
+                  src="//images.ctfassets.net/bffxiku554r1/4wuuKMjqUbsIJL7gl65A7I/3ebd189f497edaf54091615e67203910/Memb.png?fm=jpg&amp;fit=thumb&amp;q=60&amp;w=751&amp;h=423"
+                  alt="Membership"
+                />
+              </picture>
+            </figure>
           )}
-          <div className="coop-c-hero__body">
-            <p>{content}</p>
-            {ctaComponent && (
-              <div className="coop-c-hero__link">{ctaComponent}</div>
-            )}
+          <div class="coop-c-signpost__content">
+            <h3 class="coop-c-signpost__title">{title}</h3>
+            <span class="coop-c-signpost__icon" aria-hidden="true">
+              <svg class="coop-c-signpost__icon__svg" viewBox="0 0 16 29">
+                <path d="M1.909 28.11a1.575 1.575 0 0 1-1.115-2.691L11.713 14.5.793 3.58a1.575 1.575 0 1 1 2.23-2.228l12.033 12.033a1.575 1.575 0 0 1 0 2.229L3.023 27.647c-.307.308-.71.463-1.114.463z" />
+              </svg>
+            </span>
           </div>
-
-          {squircleBg && (
-            <div className="coop-c-hero__squircle" aria-hidden="true">
-              <div className="coop-c-hero__squircle__inner">
-                <svg
-                  className="coop-c-hero__squircle__svg"
-                  viewBox="0 0 1802 1726"
-                >
-                  <path
-                    className="coop-c-hero__squircle__path"
-                    d="M1743 446.3c-49.7-167.6-173.7-299.6-339.6-362C1079.6-28.2 724.1-28.2 397 84.9 232.6 146.7 109.2 278.6 58.5 446.8 19.7 581.6 0 721.4 0 862.8s19.7 281.2 58.5 416.5c50.8 167.6 174.2 299.6 339.6 362 162.2 56.2 331.5 84.7 502.9 84.7 172 0 341.3-28.4 504-85.2 164.9-62.4 288.3-193.8 338-362 39.4-135.8 59-275.6 59-416s-19.7-280.6-59-416.5z"
-                  />
-                </svg>
-              </div>
-            </div>
-          )}
-        </div>
+        </a>
       </div>
-      <div className="coop-c-hero__outer">{children}</div>
     </>
   );
 };
 
 Signpost.defaultProps = {
-  squircleBg: false,
-  pullContent: false,
-  ctaComponent: null,
+  title: null,
+  url: null,
   mediaComponent: null,
-  children: null,
 };
 
 Signpost.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-  squircleBg: PropTypes.bool,
-  pullContent: PropTypes.bool,
-  ctaComponent: PropTypes.node,
+  url: PropTypes.string.isRequired,
   mediaComponent: PropTypes.node,
-  children: PropTypes.node,
 };
 
 export default Signpost;

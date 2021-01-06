@@ -7,42 +7,14 @@ export default {
   component: Signpost,
 };
 
-const heroTitle = "Supporting communities";
-const content = `Find out what community and the power of local people means to Co-op.
-You'll discover the great things we can achieve when we work together to create a better society.`;
+const linkTitle = "Supporting communities";
+const url = `http://www.coop.co.uk`;
 
 export const Basic = (args) => <Signpost {...args} />;
 Basic.args = {
-  title: heroTitle,
-  content,
-  squircleBg: true,
+  title: linkTitle,
+  url,
 };
-
-const LinkButton = () => (
-  <a href="http://google.com">More about how Co-op is supporting communities</a>
-);
-export const WithLinkCTA = () => (
-  <Signpost
-    title={heroTitle}
-    content={content}
-    ctaComponent={<LinkButton />}
-    squircleBg
-  />
-);
-
-const Button = () => (
-  <a href="https://coop.co.uk" className="coop-btn coop-btn--primary">
-    Find out how you can help
-  </a>
-);
-export const WithButtonCTA = () => (
-  <Signpost
-    title={heroTitle}
-    content={content}
-    ctaComponent={<Button />}
-    squircleBg
-  />
-);
 
 const MediaComponent = () => {
   const src =
@@ -51,20 +23,5 @@ const MediaComponent = () => {
   return <ResponsiveImage src={src} alt={alt} />;
 };
 export const WithMedia = () => (
-  <Signpost
-    title={heroTitle}
-    content={content}
-    mediaComponent={<MediaComponent />}
-    squircleBg
-  />
-);
-
-export const WithMediaAndCTA = () => (
-  <Signpost
-    title={heroTitle}
-    content={content}
-    ctaComponent={<Button />}
-    mediaComponent={<MediaComponent />}
-    squircleBg
-  />
+  <Signpost title={linkTitle} url={url} mediaComponent={<MediaComponent />} />
 );
