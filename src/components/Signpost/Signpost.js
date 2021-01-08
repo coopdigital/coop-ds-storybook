@@ -79,15 +79,21 @@ const Signpost = ({ title, url, mediaComponent }) => {
 };
 
 Signpost.defaultProps = {
-  title: null,
-  url: null,
+  title: "Supporting communities",
+  url: "http://www.coop.co.uk",
   mediaComponent: null,
+  dataContentType: null,
+  dataContentParent: null,
+  dataLinkText: null,
 };
 
 Signpost.propTypes = {
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
-  mediaComponent: PropTypes.string.node,
+  mediaComponent: PropTypes.string.isOptional,
+  dataContentType: PropTypes.string.isOptional,
+  dataContentParent: PropTypes.string.isOptional,
+  dataLinkText: PropTypes.string.isOptional,
 };
 
 export default Signpost;
