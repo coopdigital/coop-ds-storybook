@@ -82,6 +82,7 @@
     "@testing-library/react": "^11.0.4",
     "@types/fs-extra": "^9.0.1",
     "@types/styled-components": "^5.1.0",
+    "@whitespace/storybook-addon-html": "^4.2.0",
     "auto": "^9.54.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.3.0",

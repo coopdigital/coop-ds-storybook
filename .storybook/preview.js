@@ -21,4 +21,10 @@ addParameters({
   docs: {
     theme: coopTheme,
   },
+  html: {
+    prettier: {
+      tabWidth: 4,
+      useTabs: false,
+    },
+  },
 });

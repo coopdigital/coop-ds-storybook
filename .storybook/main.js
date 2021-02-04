@@ -2,7 +2,7 @@ const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
 
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.js'],
-  addons: ['@storybook/addon-essentials', '@storybook/addon-storysource', '@storybook/addon-a11y'],
+  addons: ['@storybook/addon-essentials', '@storybook/addon-storysource', '@storybook/addon-a11y','@whitespace/storybook-addon-html'],
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.scss$/,
