@@ -6,6 +6,10 @@ import "@coopdigital/foundations-global/dist/global.css";
 addParameters({
   options: {
     showRoots: true,
+    categoryOrder: ['Docs', 'Foundations', 'Base', 'Co-op UI'],
+    storySort: {
+      order: ['Docs', ['Intro', 'Getting Started'], 'Foundations', 'Base', 'Co-op UI'],
+    },
   },
   // automatically create action args for all props that start with "on"
   actions: { argTypesRegex: "^on.*" },
@@ -18,6 +22,7 @@ addParameters({
     // by default this is false
     hideEmpty: true,
   },
+
   docs: {
     theme: coopTheme,
   },

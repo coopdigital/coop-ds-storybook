@@ -1,7 +1,7 @@
 const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
 
 module.exports = {
-  stories: ['../src/**/*.stories.@(js|mdx)'],
+  stories: ['../src/**/*.stories.@(js|jsx|mdx)'],
   addons: ['@storybook/addon-essentials', '@storybook/addon-storysource', '@storybook/addon-a11y',{
     name: '@storybook/addon-docs',
     options: {
