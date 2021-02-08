@@ -1,0 +1,49 @@
+import {ArgsTable,  Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import BlockQuote from "./BlockQuote";
+
+export const BaseBlockQuote = (args) => <BlockQuote {...args} />;
+
+<Meta title="Base/BlockQuote" component={BlockQuote} />
+
+# BlockQuotes
+Intro to blockquotes
+
+## Usage
+Usage guidelines for the blockquote component.
+
+## Default BlockQuote Example
+A test cnavas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+<Canvas>
+  <BlockQuote citation="citation">This is a quote</BlockQuote>
+</Canvas>
+
+## Stories for the BlockQuote component
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+### A default BlockQuote
+A default BlockQuote looks like this....
+
+<Story name="Base/BlockQuote"
+  args= {{
+    citation: "citation",
+    children: "Here is a quote passed from args"
+  }}
+>
+  { BaseBlockQuote.bind({}) }
+</Story>
+
+### A BlockQuote with large quote text from class name.
+You can pass classes via the className prop which will modify styles of the quote body.
+
+This will not change the citation styles
+
+<Story name="Base/BlockQuoteClassName"
+  args= {{
+    className: "coop-t-h2",
+    citation: "a new citation",
+    children: 'We use className to pass in "coop-t-h2" to increase the quote font size'
+  }}
+>
+  { BaseBlockQuote.bind({}) }
+</Story>
