@@ -1,0 +1,106 @@
+import {ArgsTable,  Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Button from "./Button";
+
+export const BasicButton = (args) => <Button {...args} argTypes={{ onClick: {action: 'clicked' } }} />;
+BasicButton.args = { variant: "primary", children: "Label" };
+
+<Meta title="Base/Button" component={Button} />
+
+# Buttons
+Buttons are functional. They should allow a user to complete a task, and tell them what it is going to do with the information they have provided.
+
+## Usage
+Usage guidelines and
+
+## Default Button Example
+A test cnavas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+<Canvas>
+  <BasicButton children="Default button" />
+</Canvas>
+
+## Stories for the Button component
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+### A default button
+A default button looks like this....
+<Story name="Base/Button"
+  args= {{
+    children: "Label"
+  }}
+>
+  { BasicButton.bind({}) }
+</Story>
+
+### A primary button variant
+A primary button example
+<Story name="Base/Button primary"
+  args= {{
+    variant: "primary",
+    children: "Label"
+  }}
+>
+  { BasicButton.bind({}) }
+</Story>
+
+
+### All buttons
+All the buttons.
+
+Here we can look at decorators or something similar to wrap the output in grid, or just import grid and do it manually?
+
+<Story name="Base/Buttons all"
+  args= {{
+    children: "Label"
+  }}
+>
+  <Button>Default</Button>
+  <Button variant="primary">Primary</Button>
+  <div style={{ background: "grey", display: "inline-block" }}>
+    <Button variant="white">White</Button>
+  </div>
+  <Button variant="grey">Grey</Button>
+  <Button size="small">Small</Button>
+  <Button fullWidth>Full width</Button>
+  <Button isLoading>Loading</Button>
+</Story>
+
+### Sizes
+Buttons have 3 sizes:
+ * default, no variant prop required
+ * `small`, add the value `small` to your `variant` prop on the component
+ * `large`, add the value `large` to your `variant` prop on the component
+
+<Story name="Base/Buttons sizes"
+  args= {{
+    children: "Label"
+  }}
+>
+  <Button>Default</Button>
+  <Button size="small">Small</Button>
+</Story>
+
+
+### Disabled
+<Story name="Base/Buttons dsiabled"
+  args= {{
+    children: "Label",
+    disabled: true,
+  }}
+>
+  <Button disabled>Primary</Button>
+  <Button variant="primary" disabled>
+    Primary
+  </Button>
+  <Button variant="white" disabled>
+    White
+  </Button>
+  <Button variant="grey" disabled>
+    Grey
+  </Button>
+</Story>
+
+## Storybook ArgsTable for this component
+<ArgsTable of={Button} />
+
+
