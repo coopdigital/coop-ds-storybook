@@ -6,7 +6,6 @@ import "@coopdigital/foundations-global/dist/global.css";
 addParameters({
   options: {
     showRoots: true,
-    categoryOrder: ['Docs', 'Foundations', 'Base', 'Co-op UI'],
     storySort: {
       order: ['Docs', ['Intro', 'Getting Started'], 'Foundations', 'Base', 'Co-op UI'],
     },
