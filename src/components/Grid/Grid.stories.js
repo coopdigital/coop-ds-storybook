@@ -2,14 +2,14 @@ import React from "react";
 import Grid from "./index";
 import GridItem from "../GridItem";
 
-export default {
-  title: "Base/Grid",
-  component: Grid,
-};
+// export default {
+//   title: "Base/Grid",
+//   component: Grid,
+// };
 
 export const Basic = (args) => (
   <Grid {...args}>
-    <GridItem size={3}>
+    <GridItem size={3} key="aa">
       <span
         style={{
           display: "block",
@@ -19,7 +19,7 @@ export const Basic = (args) => (
         }}
       />
     </GridItem>
-    <GridItem size={3}>
+    <GridItem size={3} key="bb">
       <span
         style={{
           display: "block",

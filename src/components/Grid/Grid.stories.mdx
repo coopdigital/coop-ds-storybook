@@ -1,0 +1,58 @@
+import {ArgsTable,  Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Grid from "./Grid";
+import GridItem from "../GridItem";
+
+export const BaseGrid = (args) => (
+    <Grid {...args} >
+        <GridItem size={3}>
+            <span
+                style={{
+                display: "block",
+                minHeight: "100px",
+                border: "1px solid #6e6e6e",
+                background: "#e2e2e2",
+                }}
+            />
+        </GridItem>
+        <GridItem size={3}>
+            <span
+                style={{
+                display: "block",
+                minHeight: "100px",
+                border: "1px solid #6e6e6e",
+                background: "#c4c4c4",
+                }}
+            />
+        </GridItem>
+    </Grid>
+);
+
+[TODO - find out what we do with subcomponents ]::
+[TODO - how to dynamically add GridItem to a Grid story]::
+
+<Meta title="Layout/Grid" component={Grid} subcomponents={GridItem}/>
+
+# Grid
+Intro to Grid
+<ArgsTable components={{ Grid: Grid, GridItem: GridItem }} />
+
+## Usage
+Usage guidelines for the Grid component.
+
+## Default Grid Example
+A test cnavas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+<Canvas>
+    <BaseGrid/>
+</Canvas>
+
+<hr/>
+
+## Stories for the Grid component
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+
+### Basic Grid story
+<Story name="Basic" args={{className: '', center: false, reverse: false }}>
+    { BaseGrid.bind({}) }
+</Story>
