@@ -87,15 +87,25 @@ InputCheckboxGroup.defaultProps = {
 };
 
 InputCheckboxGroup.propTypes = {
+  /** id - (required) so we can target areas of the form for processing */
   id: PropTypes.string.isRequired,
+  /** legend - (required) to describe the block or group of checkboxes */
   legend: PropTypes.string.isRequired,
+  /** hint - (optional) can be used to help guide users in filling in areas of a form. */
   hint: PropTypes.string,
+  /** hasError - (optional/state managed?) this would trigger on the element when an error state occurs.
+   * Requires state management to set this */
   hasError: PropTypes.bool,
+  /** errorMsg - (optional) shows the user an error message when an error occurs in filling out a form or form processing. */
   errorMsg: PropTypes.string,
+  /** children - takes a list of InputCheckbox components. */
   children: PropTypes.node,
+  /** className - (optional) - optional and is used to add more styling to the checkbox group if required in your project.*/
   className: PropTypes.string,
+  /** ?? would a checkbox group ever hold a value?? */
   value: PropTypes.arrayOf(
     PropTypes.oneOfType([PropTypes.string, PropTypes.number])
   ),
+  /** Do we need to onChange at this level? Would this trigger when child checkbox error state changes? */
   onChange: PropTypes.func,
 };
