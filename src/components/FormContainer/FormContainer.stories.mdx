@@ -3,7 +3,7 @@ import FormContainer from "./FormContainer";
 
 export const BaseFormContainer = (args) => <FormContainer {...args} argTypes={{ onClick: {action: 'clicked' } }}/>;
 
-<Meta title="Forms/FormContainer" component={FormContainer} />
+<Meta title="Elements/FormContainer" component={FormContainer} />
 
 # FormContainer
 Intro to FormContainer
@@ -31,12 +31,12 @@ We can keep component stories at the bottom of the documentation pages, for bett
 
 ### A default FormContainer
 A default FormContainer looks like this....
-<Story name="Forms/FormContainer/Base">
+<Story name="Elements/FormContainer/Base">
   { BaseFormContainer.bind({}) }
 </Story>
 
 
-<Story name="Forms/FormContainer/CustomProps"
+<Story name="Elements/FormContainer/CustomProps"
   args= {{
     id: "customId",
     className: "custom-class--name",
