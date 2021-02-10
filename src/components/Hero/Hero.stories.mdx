@@ -24,7 +24,7 @@ export const MediaComponent = () => {
 <!-- END setup optional components--->
 
 <!-- setup component for use in stories-->
-// export const BaseHero = (args) => <Hero {...args} />;
+<!-- export const BaseHero = (args) => <Hero {...args} />; -->
 
 <!-- Add base Meta for each story,
      meta like args can be overridden at story level if required -->
@@ -56,10 +56,13 @@ Optional elements are:
 A test cnavas to show the component and it's underlying code.
 A canvas can include stories or just plain components like the one below.
 <Canvas>
-    <BaseHero
+    <Hero
       title="Supporting Communities 2"
       content="Find out what community and the power of local people means to Co-op.
-You'll discover the great things we can achieve when we work together to create a better society."/>
+You'll discover the great things we can achieve when we work together to create a better society."
+      squircleBg
+      mediaComponent={<MediaComponent/>}
+      ctaComponent={<Button/>}/>
 </Canvas>
 
 
@@ -150,5 +153,3 @@ We can keep component stories at the bottom of the documentation pages, for bett
     {args => <Hero {...args} />}
   </Story>
 </Canvas>
-
-
