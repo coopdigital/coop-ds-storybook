@@ -1,10 +1,10 @@
 import React from "react";
 import InputDOB from "./InputDOB";
 
-export default {
-  title: "Base/InputDOB",
-  component: InputDOB,
-};
+// export default {
+//   title: "Base/InputDOB",
+//   component: InputDOB,
+// };
 
 export const Basic = () => (
   <InputDOB id="basic" name="basic" label="Date of Birth" />
