@@ -8,23 +8,8 @@ import {
 } from "@storybook/addon-docs/blocks";
 import InputText from "./InputText";
 
-<!-- TODO:  look at controls for width and change control to slider||range -->
-
-<!-- Add options to pass in to options prop on the select input component -->
-export const options = [
-  {
-    value: "1",
-    text: "one",
-  },
-  {
-    value: "2",
-    text: "two",
-  },
-];
-
 <!-- Add base Meta for each story,
      meta like args can be overridden at story level if required -->
-
 <Meta title="Elements/InputText" component={InputText} />
 
 <!--- Start content -->
@@ -110,6 +95,19 @@ A select with width set to `10` which equals a width of 10% in it's container.
       name: "withhintandlabel",
       label: "Text input label",
       hint: "Hint to help guide the user",
+    }}>
+    {(args) => <InputText {...args} />}
+  </Story>
+</Canvas>
+
+### InputText disabled
+<Canvas>
+  <Story name="InputText disabled"
+    args={{
+      id: "basic-disabled",
+      name: "basic-disabled",
+      label: "Input disabled with label",
+      disabled: true,
     }}>
     {(args) => <InputText {...args} />}
   </Story>
