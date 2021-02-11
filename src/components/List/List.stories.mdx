@@ -29,46 +29,74 @@ export const items = [
 
 <!--- Start content -->
 # List
-Intro to List.
+Lists are an effective way of breaking up content — they make it easier for users to scan and find information. Use bullet points to break up a list of items.
+
+## Installation
+Lists come with the typography package.
+
+`npm install @coopdigital/foundations-typography`
+
+Then import the CSS file into your project.
+
+`@import "@coopdigital/foundations-typography";`
 
 ## Usage
-Usage of List form controls
 
-## Default List example
-A test canvas to show the component and it's underlying code.
-A canvas can include stories or just plain components like the one below.
-the canvas below shows both `bullet` and `numbered` lists.
+### HTML
+Basic mark-up structure for lists. 
+
+### Bullet list
 <Canvas>
   <List type="bullet" items={items} />
+</Canvas>
+
+### Numbered list
+<Canvas>
   <List type="numbered" items={items} />
 </Canvas>
 
-## Props
-<p>The List takes the props from the table below.</p>
-<ArgsTable components={{ List: List }} />
+### CSS
+Utility classes to help you style lists.
 
-<hr />
+`.coop-u-list-bare` Removes the bullet points or numbers ans the left hand padding of the list.
 
-## Stories for the List component
+`.coop-u-list-inline` Will put the list into a horizontal row.
 
-We can keep component stories at the bottom of the documentation pages, for better doc readability.
-
-### Basic numbered List story
+### React component bullet list example
 <Canvas>
-  <Story name="Numbered List"
+  <Story name="Bullet list bare"
     args={{
-      type: "numbered",
+      class: "coop-u-list-bare",
+      type: "bullet",
       items: items,
     }}>
     {(args) => <List {...args} />}
   </Story>
 </Canvas>
 
-### Basic bullet List story
+## React
+You can pass properties into the component to render your list.
+
+## Properties
+<p>The List takes the props from the table below.</p>
+<ArgsTable components={{ List: List }} />
+
+### React component bullet list example
 <Canvas>
   <Story name="Bullet list"
     args={{
       type: "bullet",
+      items: items,
+    }}>
+    {(args) => <List {...args} />}
+  </Story>
+</Canvas>
+
+### React component numbered List example
+<Canvas>
+  <Story name="Numbered List"
+    args={{
+      type: "numbered",
       items: items,
     }}>
     {(args) => <List {...args} />}
