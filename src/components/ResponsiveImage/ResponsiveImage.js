@@ -42,10 +42,15 @@ ResponsiveImage.defaultProps = {
 };
 
 ResponsiveImage.propTypes = {
+  /** src - (required) a url to the image you are sourcing. */
   src: PropTypes.string.isRequired,
+  /** alt - (required) needed to give a meaningful description to screenreader users. */
   alt: PropTypes.string.isRequired,
+  /** width - can set the width of the image in pixels */
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  /** height - can set the height of the image in pixels */
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  /** source - takes an array of objects with the following properties: `type`, `media` and `srcSet` */
   sources: PropTypes.arrayOf(PropTypes.object),
 };
 
