@@ -80,9 +80,9 @@ InputSelect.defaultProps = {
 InputSelect.propTypes = {
   /** id - (required) can be used for identifying the specific form element for labels and targeting values for form submission. */
   id: PropTypes.string.isRequired,
-  /** name - (required) can be used for identifying the specific form element for labels and targeting values for sorm submission. */
+  /** name - (required) can be used for identifying the specific form element for labels and targeting values for form submission. */
   name: PropTypes.string.isRequired,
-  /** className - optional and is used to add more styling to the checkbox if required in your project.*/
+  /** className - optional and is used to add more styling to the input if required in your project.*/
   className: PropTypes.string,
   /** label - all form inputs require a label to describe the what the input does. */
   label: PropTypes.string,
