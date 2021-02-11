@@ -62,11 +62,23 @@ Utility classes to help you style lists.
 
 `.coop-u-list-inline` Will put the list into a horizontal row.
 
-### React component bullet list example
+### List bare example
 <Canvas>
   <Story name="Bullet list bare"
     args={{
-      class: "coop-u-list-bare",
+      className: "coop-u-list-bare",
+      type: "bullet",
+      items: items,
+    }}>
+    {(args) => <List {...args} />}
+  </Story>
+</Canvas>
+
+### List inline example
+<Canvas>
+  <Story name="Bullet list inline"
+    args={{
+      className: "coop-u-list-inline",
       type: "bullet",
       items: items,
     }}>
