@@ -27,7 +27,9 @@ List.defaultProps = {
 };
 
 List.propTypes = {
+  /** type - Needs to be one of either `bullet` for `ul` or `numbered` for `ol` list types */
   type: PropTypes.oneOf(["bullet", "numbered"]),
+  /** items - An array of items to populate the list with list items  */
   items: PropTypes.arrayOf(
     PropTypes.shape({
       content: PropTypes.node,

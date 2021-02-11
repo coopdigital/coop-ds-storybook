@@ -1,0 +1,76 @@
+import {
+  ArgsTable,
+  Meta,
+  Story,
+  Canvas,
+  Source,
+  Preview,
+} from "@storybook/addon-docs/blocks";
+import List from "./List";
+
+<!-- Setup list items to populate list stories -->
+export const items = [
+  {
+    content: "one",
+  },
+  {
+    content: "two",
+  },
+  {
+    content: "three",
+  },
+];
+
+
+<!-- Add base Meta for each story,
+     meta like args can be overridden at story level if required -->
+
+<Meta title="Elements/List" component={List} />
+
+<!--- Start content -->
+# List
+Intro to List.
+
+## Usage
+Usage of List form controls
+
+## Default List example
+A test canvas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+the canvas below shows both `bullet` and `numbered` lists.
+<Canvas>
+  <List type="bullet" items={items} />
+  <List type="numbered" items={items} />
+</Canvas>
+
+## Props
+<p>The List takes the props from the table below.</p>
+<ArgsTable components={{ List: List }} />
+
+<hr />
+
+## Stories for the List component
+
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+### Basic numbered List story
+<Canvas>
+  <Story name="Numbered List"
+    args={{
+      type: "numbered",
+      items: items,
+    }}>
+    {(args) => <List {...args} />}
+  </Story>
+</Canvas>
+
+### Basic bullet List story
+<Canvas>
+  <Story name="Bullet list"
+    args={{
+      type: "bullet",
+      items: items,
+    }}>
+    {(args) => <List {...args} />}
+  </Story>
+</Canvas>
