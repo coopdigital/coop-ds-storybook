@@ -1,0 +1,135 @@
+import {
+  ArgsTable,
+  Meta,
+  Story,
+  Canvas,
+  Source,
+  Preview,
+} from "@storybook/addon-docs/blocks";
+import InputSelect from "./InputSelect";
+
+<!-- TODO:  look at controls for width and change control to slider||range -->
+
+<!-- Add options to pass in to options prop on the select input component -->
+export const options = [
+  {
+    value: "1",
+    text: "one",
+  },
+  {
+    value: "2",
+    text: "two",
+  },
+];
+
+<!-- Add base Meta for each story,
+     meta like args can be overridden at story level if required -->
+
+<Meta title="Elements/InputSelect" component={InputSelect} />
+
+<!--- Start content -->
+
+# InputSelect
+Intro to InputSelect.
+
+## Usage
+Usage of radio form controls
+
+## Default InputSelect example
+A test canvas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+<Canvas>
+  <InputSelect label="A basic select" id="id" name="name" options={options} />
+</Canvas>
+
+## Props
+<p>The InputSelect takes the props from the table below.</p>
+<ArgsTable components={{ InputSelect: InputSelect }} />
+
+<hr />
+
+## Stories for the InputSelect component
+
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+### Basic InputSelect story
+This select includes the required props `id` and `name` as well as a `label` and `options` props.
+<Canvas>
+  <Story name="Basic InputSelect"
+    args={{
+      id: "basic",
+      name: "basic",
+      label: "basic select",
+      options: options,
+    }}>
+    {(args) => <InputSelect {...args} />}
+  </Story>
+</Canvas>
+
+### InputSelect with width story
+A select with width set to `10` which equals a width of 10% in it's container.
+<Canvas>
+  <Story name="With width"
+    args={{
+      id: "withWidth",
+      name: "withWidth",
+      options: options,
+      width: 10,
+    }}>
+    {(args) => <InputSelect {...args} />}
+  </Story>
+</Canvas>
+
+### InputSelect with placeholder
+<Canvas>
+  <Story name="With placeholder"
+    args={{
+      id: "withplaceholder",
+      name: "withplaceholder",
+      placeholder: "Placeholder",
+      options: options,
+    }}>
+    {(args) => <InputSelect {...args} />}
+  </Story>
+</Canvas>
+
+### InputSelect with hint
+<Canvas>
+  <Story name="With hint"
+    args={{
+      id: "withhint",
+      name: "withhint",
+      hint: "Select hint to help guide the user",
+      options: options,
+    }}>
+    {(args) => <InputSelect {...args} />}
+  </Story>
+</Canvas>
+
+### InputSelect with label and hint
+<Canvas>
+  <Story name="With hint and label"
+    args={{
+      id: "withhintandlabel",
+      name: "withhintandlabel",
+      label: "Select label",
+      hint: "Select hint to help guide the user",
+      options: options,
+    }}>
+    {(args) => <InputSelect {...args} />}
+  </Story>
+</Canvas>
+
+### InputSelect with errors
+<Canvas>
+  <Story name="With errors"
+    args={{
+      id: "withhint",
+      name: "withhint",
+      hasError: true,
+      errorMsg: "Error message",
+      options: options,
+    }}>
+    {(args) => <InputSelect {...args} />}
+  </Story>
+</Canvas>
