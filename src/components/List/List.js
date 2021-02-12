@@ -33,8 +33,8 @@ const List = ({ className, type, items, bare, inline }) => {
 List.defaultProps = {
   type: "bullet",
   items: [],
-  bare: null,
-  inline: null,
+  bare: false,
+  inline: false,
   className: null,
 };
 
@@ -43,9 +43,11 @@ List.propTypes = {
   type: PropTypes.oneOf(["bullet", "numbered"]),
   /** className - optional and is used to add more styling to the list if required in your project.*/
   className: PropTypes.string,
-  /** items - An array of items to populate the list with list items  */
+  /** bare - optional. Used to add the `coop-u-list-bare` class to the list */
   bare: PropTypes.bool,
+  /** bare - optional. Used to add the `coop-u-list-inline` class to the list */
   inline: PropTypes.bool,
+  /** items - An array of items to populate the list with list items  */
   items: PropTypes.arrayOf(
     PropTypes.shape({
       content: PropTypes.node,
