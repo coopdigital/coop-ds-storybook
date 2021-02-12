@@ -4,23 +4,23 @@ import classNames from "../../utils/classNames";
 import "./list.scss";
 import shortid from "shortid";
 
-const List = ({ type, items, classNames, bare, inline }) => {
-  
+const List = ({ className, type, items, bare, inline }) => {
+
   const typeMap = {
     bullet: "ul",
     numbered: "ol",
   };
   const Tag = typeMap[type];
 
-  const classes = classNames([
+  const rootClasses = classNames('',[
     bare && "coop-u-list-bare",
-    inline && "coop-u-list-bare",
+    inline && "coop-u-list-inline",
     className,
   ]);
 
 
   return (
-    <Tag className={classes}>
+    <Tag className={rootClasses}>
       {items.map(({ content, ...props }, index) => (
         <li key={shortid.generate()} {...props}>
           {content}
@@ -33,6 +33,8 @@ const List = ({ type, items, classNames, bare, inline }) => {
 List.defaultProps = {
   type: "bullet",
   items: [],
+  bare: null,
+  inline: null,
   className: null,
 };
 
@@ -42,6 +44,8 @@ List.propTypes = {
   /** className - optional and is used to add more styling to the list if required in your project.*/
   className: PropTypes.string,
   /** items - An array of items to populate the list with list items  */
+  bare: PropTypes.bool,
+  inline: PropTypes.bool,
   items: PropTypes.arrayOf(
     PropTypes.shape({
       content: PropTypes.node,
