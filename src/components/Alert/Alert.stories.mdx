@@ -1,0 +1,30 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Alert from "./Alert";
+
+<Meta title="Elements/Alert" component={Alert} />
+
+# Alert
+Here is an alert component in documentation.
+
+## Usage
+With `MDX` we can define a story for `Alert` right in the middle of our Markdown documentation.
+
+## Basic Alert
+A basic alert looks like this....
+<Story name="Alert/Base">
+  <Alert heading="Alert with no link">Standard message</Alert>
+</Story>
+
+## All alerts
+<Story name="Alert/All">
+  <Alert type="info" heading="Info Alert" link="#" />
+  <Alert type="warn" heading="Warning Alert" link="#" />
+  <Alert heading="Alert with no link">Standard message</Alert>
+</Story>
+
+## Playground
+<Canvas>
+  <Alert type="info" heading="Info Alert" link="#" />
+  <Alert type="warn" heading="Warning Alert" link="#" />
+  <Alert heading="Alert with no link">Standard message</Alert>
+</Canvas>

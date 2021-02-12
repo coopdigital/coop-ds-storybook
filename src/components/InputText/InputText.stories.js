@@ -1,10 +1,10 @@
 import React from "react";
 import InputText from "./InputText";
 
-export default {
-  title: "Base/InputText",
-  component: InputText,
-};
+// export default {
+//   title: "Base/InputText",
+//   component: InputText,
+// };
 
 export const Basic = (args) => <InputText {...args} />;
 Basic.args = {

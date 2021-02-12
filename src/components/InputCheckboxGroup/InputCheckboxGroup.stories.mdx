@@ -1,0 +1,173 @@
+import { ArgsTable, Meta, Story, Canvas, Source, Preview } from '@storybook/addon-docs/blocks';
+import InputCheckboxGroup from "./InputCheckboxGroup";
+import InputCheckbox from "../InputCheckbox";
+
+<!-- setup some child checkboxes to pass into the children prop -->
+
+export const ChildCheckboxes7_9 = () => (
+  <>
+   <InputCheckbox
+        id="checkbox-7"
+        name="checkbox-7"
+        label="Checkbox 7"
+        value={7}
+      />
+      <InputCheckbox
+        id="checkbox-8"
+        name="checkbox-8"
+        label="Checkbox 8"
+        value={8}
+      />
+      <InputCheckbox
+        id="checkbox-9"
+        name="checkbox-9"
+        label="Checkbox 9"
+        value={9}
+      />
+  </>
+);
+
+<!-- Add base Meta for each story,
+     meta like args can be overridden at story level if required -->
+<Meta title="Elements/InputCheckboxGroup"
+      component={InputCheckboxGroup}
+      subcomponents={InputCheckbox}
+      args={{
+        id: 'InputCheckboxGroupID',
+      }}/>
+
+
+<!--- Start content -->
+# InputCheckboxGroup
+Intro to InputCheckboxGroup.  Allows for grouping of InputCheckbox components under a fieldset with legend and optional hint text
+
+## Usage
+Use it in a form to group related checkboxes in a `<fieldset>`
+
+## Default InputCheckboxGroup example
+A test cnavas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+<Canvas>
+    <InputCheckboxGroup
+        id="checkboxgroup1"
+        legend="CheckboxGroup Legend"
+        hint="Some hint text to help guide users"
+      >
+        <InputCheckbox
+          id="checkbox-1"
+          name="checkbox-1"
+          label="Checkbox 1"
+          value={1}
+        />
+        <InputCheckbox
+            id="checkbox-2"
+            name="checkbox-2"
+            label="Checkbox 2"
+            value={2}
+        />
+        <InputCheckbox
+            id="checkbox-3"
+            name="checkbox-3"
+            label="Checkbox 3"
+            value={3}
+        />
+    </InputCheckboxGroup>
+    <InputCheckboxGroup
+      id="group-2"
+      legend="Checkbox Group with hint and error"
+      hint="Hint message"
+      errorMsg="Error message"
+      hasError
+    >
+      <InputCheckbox
+        id="checkbox-4"
+        name="checkbox-4"
+        label="Checkbox 4"
+        value={4}
+      />
+      <InputCheckbox
+        id="checkbox-5"
+        name="checkbox-5"
+        label="Checkbox 5"
+        value={5}
+      />
+      <InputCheckbox
+        id="checkbox-6"
+        name="checkbox-6"
+        label="Checkbox 6"
+        value={6}
+      />
+    </InputCheckboxGroup>
+</Canvas>
+
+## Props
+<p>The InputCheckboxGroup takes the props from the table below.</p>
+<p><em>InputCheckbox props are also provided with this example</em>.</p>
+<ArgsTable components={{ InputCheckboxGroup: InputCheckboxGroup, InputCheckbox: InputCheckbox }} />
+
+<hr/>
+
+## Stories for the InputCheckboxGroup component
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+### Basic InputCheckboxGroup story
+<Canvas>
+  <Story
+    name="Basic"
+    args={{
+        children: <ChildCheckboxes7_9/>,
+      }}>
+     {args => <InputCheckboxGroup {...args} />}
+  </Story>
+</Canvas>
+
+### Basic InputCheckboxGroup with legend
+<Canvas>
+  <Story
+    name="With legend"
+    args={{
+        legend: "Checkbox group legend",
+        children: <ChildCheckboxes7_9/>,
+      }}>
+     {args => <InputCheckboxGroup {...args} />}
+  </Story>
+</Canvas>
+
+### Basic InputCheckboxGroup with legend and hint
+<Canvas>
+  <Story
+    name="With legend and hint"
+    args={{
+        legend: "Checkbox group legend",
+        hint: "Some hint text to help guide the user.",
+        children: <ChildCheckboxes7_9/>,
+      }}>
+     {args => <InputCheckboxGroup {...args} />}
+  </Story>
+</Canvas>
+
+### Basic InputCheckboxGroup with Errors
+<Canvas>
+  <Story name="With errors"
+    args={{
+      errorMsg: "There is an error with x and y",
+      hasError: true,
+      children: <ChildCheckboxes7_9/>,
+    }}>
+    {args => <InputCheckboxGroup {...args} />}
+  </Story>
+</Canvas>
+
+### Basic InputCheckboxGroup with Errors, legend and hint
+<Canvas>
+  <Story name="With errors and hint"
+    args={{
+      legend: "Checkbox Group with hint and error",
+      hint: "Hint message",
+      errorMsg: "There is an error with x",
+      hasError: true,
+      children: <ChildCheckboxes7_9/>,
+    }}>
+      { args => <InputCheckboxGroup {...args} /> }
+  </Story>
+</Canvas>

@@ -1,0 +1,147 @@
+import {
+  ArgsTable,
+  Meta,
+  Story,
+  Canvas,
+  Source,
+  Preview,
+} from "@storybook/addon-docs/blocks";
+import MembershipBanner from "./MembershipBanner";
+
+<!-- Set up some btn and link props to pass into the component -->
+export const btn = {
+  href: "https://membership.coop.co.uk/register",
+  text: "Become a Co-op Member",
+};
+
+export const links = [
+  {
+    href: "https://membership.coop.co.uk/claim-rewards",
+    text: "Add a missed receipt",
+  },
+  {
+    href: "https://membership.coop.co.uk",
+    text: "Get a replacement card",
+  },
+  {
+    href: "https://membership.coop.co.uk/details",
+    text: "Change your details",
+  },
+  {
+    href: "https://membership.coop.co.uk",
+    text: "About Co-op Membership",
+  },
+];
+
+
+<!-- Add base Meta for each story,
+     meta like args can be overridden at story level if required -->
+<Meta title="Component/MembershipBanner" component={MembershipBanner} />
+
+<!--- Start content -->
+# MembershipBanner
+Intro to MembershipBanner.
+
+## Usage
+Usage of MembershipBanner form controls
+
+## Default MembershipBanner example
+A test canvas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+Here is an example of a MembershipBanner using it's default props with no props passed in
+<Canvas>
+  <MembershipBanner />
+</Canvas>
+
+## Props
+<p>The MembershipBanner takes the props from the table below.</p>
+<ArgsTable components={{ MembershipBanner: MembershipBanner }} />
+
+<hr />
+
+## Stories for the MembershipBanner component
+
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+### Basic MembershipBanner using default props
+<Canvas>
+  <Story name="Basic" args={{}}>
+    {(args) => <MembershipBanner {...args} />}
+  </Story>
+</Canvas>
+
+### MembershipBanner with Button story
+<Canvas>
+  <Story name="With Button"
+    args={{
+      btn: btn,
+    }}>
+    {(args) => <MembershipBanner {...args} />}
+  </Story>
+</Canvas>
+
+### MembershipBanner with links story
+<Canvas>
+  <Story name="With links"
+    args={{
+      links: links,
+    }}>
+    {(args) => <MembershipBanner {...args} />}
+  </Story>
+</Canvas>
+
+### MembershipBanner with links and btn props
+<Canvas>
+  <Story name="With links and btn"
+    args={{
+      btn: btn,
+      links: links,
+    }}>
+    {(args) => <MembershipBanner {...args} />}
+  </Story>
+</Canvas>
+
+### MembershipBanner with custom title
+<Canvas>
+  <Story name="With custom title"
+    args={{
+      title: "It's more than a membership",
+    }}>
+    {(args) => <MembershipBanner {...args} />}
+  </Story>
+</Canvas>
+
+### MembershipBanner with custom body
+<Canvas>
+  <Story name="With custom body"
+    args={{
+      body: "Become part of the movement and help your community",
+    }}>
+    {(args) => <MembershipBanner {...args} />}
+  </Story>
+</Canvas>
+
+### MembershipBanner with custom title and body
+<Canvas>
+  <Story name="With custom title and body"
+    args={{
+      title: "It's more than a membership",
+      body: "Join now, become part of the movement, and help your community.",
+    }}>
+    {(args) => <MembershipBanner {...args} />}
+  </Story>
+</Canvas>
+
+
+### MembershipBanner all props used and updated
+<Canvas>
+  <Story name="With all props used"
+    args={{
+      title: "It's more than a membership",
+      body: "Join now, become part of the movement, and help your community.",
+      btn: btn,
+      links: links,
+    }}>
+    {(args) => <MembershipBanner {...args} />}
+  </Story>
+</Canvas>

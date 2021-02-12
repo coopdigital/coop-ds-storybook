@@ -1,0 +1,156 @@
+import {
+  ArgsTable,
+  Meta,
+  Story,
+  Canvas,
+  Source,
+  Preview,
+} from "@storybook/addon-docs/blocks";
+import InputTextArea from "./InputTextArea";
+
+<!-- Add base Meta for each story,
+     meta like args can be overridden at story level if required -->
+
+<Meta title="Elements/InputTextArea" component={InputTextArea} />
+
+<!--- Start content -->
+# InputTextArea
+Intro to InputTextArea.
+
+## Usage
+Usage of InputTextArea form controls
+
+## Default InputTextArea example
+A test canvas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+<Canvas>
+  <InputTextArea label="Text area label" id="id" name="name" />
+</Canvas>
+
+## Props
+<p>The InputTextArea takes the props from the table below.</p>
+<ArgsTable components={{ InputTextArea: InputTextArea }} />
+
+<hr />
+
+## Stories for the InputTextArea component
+
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+### Basic InputTextArea story
+This select includes the required props `id` and `name` as well as a `label` and `options` props.
+<Canvas>
+  <Story name="Basic"
+    args={{
+      id: "basic",
+      name: "basic",
+    }}>
+    {(args) => <InputTextArea {...args} />}
+  </Story>
+</Canvas>
+
+### InputTextArea with rows story
+InputTextArea with rows set to `6`.
+<Canvas>
+  <Story name="With rows"
+    args={{
+      id: "withRows",
+      name: "withRows",
+      rows: 6,
+    }}>
+    {(args) => <InputTextArea {...args} />}
+  </Story>
+</Canvas>
+
+### InputTextArea with cols set
+InputTextArea with cols set to `25`.
+<Canvas>
+  <Story name="With cols"
+    args={{
+      id: "withCols",
+      name: "withCols",
+      cols: 25,
+    }}>
+    {(args) => <InputTextArea {...args} />}
+  </Story>
+</Canvas>
+
+### InputTextArea with cols and row set
+InputTextArea with cols set to `25` and rows set to `6`.
+<Canvas>
+  <Story name="With cols and rows"
+    args={{
+      id: "withColsAndRows",
+      name: "withColsAndRows",
+      cols: 25,
+      rows: 6,
+    }}>
+    {(args) => <InputTextArea {...args} />}
+  </Story>
+</Canvas>
+
+### InputTextArea with hint
+<Canvas>
+  <Story name="With hint"
+    args={{
+      id: "withhint",
+      name: "withhint",
+      hint: "Hint to help guide the user",
+    }}>
+    {(args) => <InputTextArea {...args} />}
+  </Story>
+</Canvas>
+
+### InputTextArea with label and hint
+<Canvas>
+  <Story name="With hint and label"
+    args={{
+      id: "withhintandlabel",
+      name: "withhintandlabel",
+      label: "Input Label",
+      hint: "Hint to help guide the user",
+    }}>
+    {(args) => <InputTextArea {...args} />}
+  </Story>
+</Canvas>
+
+### InputTextArea disabled
+<Canvas>
+  <Story name="InputTextArea disabled"
+    args={{
+      id: "basic-disabled",
+      name: "basic-disabled",
+      label: "Input disabled with label",
+      disabled: true,
+    }}>
+    {(args) => <InputTextArea {...args} />}
+  </Story>
+</Canvas>
+
+### InputTextArea with errors
+<Canvas>
+  <Story name="With errors"
+    args={{
+      id: "witherrors",
+      name: "witherrors",
+      hasError: true,
+      errorMsg: "Error message",
+    }}>
+    {(args) => <InputTextArea {...args} />}
+  </Story>
+</Canvas>
+
+### InputTextArea with errors, label and hint
+<Canvas>
+  <Story name="With errors, label and hint"
+    args={{
+      id: "withhint",
+      name: "withhint",
+      label: "Input with label, hint and error",
+      hint: "Hint text to help guide users",
+      hasError: true,
+      errorMsg: "Error message",
+    }}>
+    {(args) => <InputTextArea {...args} />}
+  </Story>
+</Canvas>

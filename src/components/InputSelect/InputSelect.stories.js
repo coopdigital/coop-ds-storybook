@@ -1,10 +1,10 @@
 import React from "react";
 import InputSelect from "./InputSelect";
 
-export default {
-  title: "Base/InputSelect",
-  component: InputSelect,
-};
+// export default {
+//   title: "Base/InputSelect",
+//   component: InputSelect,
+// };
 
 export const Basic = (args) => <InputSelect {...args} />;
 Basic.args = {

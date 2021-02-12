@@ -24,9 +24,14 @@ Grid.defaultProps = {
 };
 
 Grid.propTypes = {
+  /** Add a class name from your own css or any loaded coop utility classes */
   className: PropTypes.string,
+  /** centers the grid on the page */
   center: PropTypes.bool,
+  /** reverses the grid order */
   reverse: PropTypes.bool,
+  /** Grid components take children node elements.
+   * GridItem should be a direct child of a grid */
   children: PropTypes.node,
 };
 

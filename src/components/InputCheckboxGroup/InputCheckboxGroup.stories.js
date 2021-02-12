@@ -2,10 +2,10 @@ import React from "react";
 import InputCheckboxGroup from "./InputCheckboxGroup";
 import InputCheckbox from "../InputCheckbox";
 
-export default {
-  title: "Base/InputCheckboxGroup",
-  component: InputCheckboxGroup,
-};
+// export default {
+//   title: "Base/InputCheckboxGroup",
+//   component: InputCheckboxGroup,
+// };
 
 export const CheckboxExample = () => (
   <>

@@ -1,10 +1,10 @@
 import React from "react";
 import FormValidation from "./FormValidation";
 
-export default {
-  title: "Base/FormValidation",
-  component: FormValidation,
-};
+// export default {
+//   title: "Base/FormValidation",
+//   component: FormValidation,
+// };
 
 const errorLinks = [
   {

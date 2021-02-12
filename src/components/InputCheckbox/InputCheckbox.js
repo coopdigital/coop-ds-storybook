@@ -98,13 +98,21 @@ InputCheckbox.defaultProps = {
 };
 
 InputCheckbox.propTypes = {
+  /** id - is required can be used for identifying the specific form element for labels and targeting values for sorm submission. */
   id: PropTypes.string.isRequired,
+  /** name - is required can be used for identifying the specific form element for labels and targeting values for sorm submission. */
   name: PropTypes.string.isRequired,
+  /** label - all form inout require a label to describe the what the input does or wat effect it has on page. */
   label: PropTypes.string.isRequired,
+  /** value -  The value contained in the checkbox, needs to be either string or number. */
   value: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  /** className - optional and is used to add more styling to the checkbox if required in your project. */
   className: PropTypes.string,
+  /** checked - is the checkbox checked or not by default */
   checked: PropTypes.bool,
+  /** disabled - is the checkbox disabled by default */
   disabled: PropTypes.bool,
+  /** onChange - an event that triggers when the input state changes */
   onChange: PropTypes.func,
 };
 

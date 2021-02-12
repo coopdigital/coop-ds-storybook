@@ -1,0 +1,19 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Signpost from "./Signpost";
+
+<Meta title="Component/Signpost" component={Signpost} />
+
+# Signpost
+A link card that can be displayed with or without an image.
+
+Signpost navigation is used in pages to link to permanent content.
+
+<code>
+.a-class-name
+</code>
+
+
+<Story name="Signpost/All">
+  <Signpost title="Signpost title" url="#" />
+  <Signpost title="Signpost title" url="#" mediaComponent="true" />
+</Story>

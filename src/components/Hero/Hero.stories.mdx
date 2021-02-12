@@ -1,0 +1,155 @@
+import { ArgsTable, Meta, Story, Canvas, Source, Preview } from '@storybook/addon-docs/blocks';
+import Hero from "./Hero";
+import ResponsiveImage from "../ResponsiveImage";
+
+
+<!-- Start setup optional components to pass in as props for CTA and Media -->
+export const LinkButton = () => (
+  <a href="http://google.com">More about how Co-op is supporting communities</a>
+);
+
+export const Button = () => (
+  <a href="https://coop.co.uk" className="coop-btn coop-btn--primary">
+    Find out how you can help
+  </a>
+);
+
+export const MediaComponent = () => {
+  const src =
+    "https://images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=png&q=60&w=600&h=338";
+  const alt = "How Co-op is supporting local communities";
+  return <ResponsiveImage src={src} alt={alt} />;
+};
+
+<!-- END setup optional components--->
+
+<!-- setup component for use in stories-->
+<!-- export const BaseHero = (args) => <Hero {...args} />; -->
+
+<!-- Add base Meta for each story,
+     meta like args can be overridden at story level if required -->
+<Meta title="Component/Hero"
+      component={Hero}
+      subcomponents={LinkButton, Button, MediaComponent}
+      args={{
+        title: 'Supporting communities',
+        content: `Find out what community and the power of local people means to Co-op. You\'ll discover the great things we can achieve when we work together to create a better society.`,
+        squircleBg: true, }}/>
+
+
+<!--- Start content -->
+# Hero
+Use the hero banner as the first component on the page.
+It should contain the page title and give an overview of what the page is about.
+
+## Usage
+The page title (H1) and lead paragraph are mandatory parts of the hero banner.
+
+Optional elements are:
+- supporting image
+- squircle background shape
+- link
+- button
+- ‘content pull’ CSS class
+
+## Default Hero Example
+A test cnavas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+<Canvas>
+    <Hero
+      title="Supporting Communities 2"
+      content="Find out what community and the power of local people means to Co-op.
+You'll discover the great things we can achieve when we work together to create a better society."
+      squircleBg
+      mediaComponent={<MediaComponent/>}
+      ctaComponent={<Button/>}/>
+</Canvas>
+
+
+## Props
+The hero takes the props from the table below.
+<ArgsTable components={{ Hero: Hero, ResponsiveImage: ResponsiveImage }} />
+
+### pullContent css
+```css
+  .coop-c-hero--pull {
+    margin-bottom: -6rem;
+
+    @media (--mq-large) {
+      margin-bottom: -12rem;
+    }
+  }
+```
+<hr/>
+
+## Stories for the Hero component
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+### Basic Hero story
+<Canvas>
+  <Story name="Basic" args={{
+    squircleBg: false, }}
+  >
+    {args => <Hero {...args} />}
+  </Story>
+</Canvas>
+
+
+### With Squircle Hero story
+<Canvas>
+  <Story name="With squircle" args={{
+    squircleBg: true, }}
+  >
+    {args => <Hero {...args} />}
+  </Story>
+</Canvas>
+
+
+### Hero with CTA link
+<Canvas>
+  <Story name="With CTA Link" args={{
+    ctaComponent: <LinkButton/>,}}
+  >
+   {args => <Hero {...args} />}
+  </Story>
+</Canvas>
+
+### Hero with CTA Button
+<Canvas>
+  <Story name="With CTA Button" args={{
+  ctaComponent: <Button/>,}}
+  >
+    {args => <Hero {...args} />}
+  </Story>
+</Canvas>
+
+### Hero with Media
+<Canvas>
+  <Story name="With Media" args={{
+  mediaComponent: <MediaComponent/>,}}
+  >
+    {args => <Hero {...args} />}
+  </Story>
+</Canvas>
+
+### Hero with Meida and CTA
+<Canvas>
+  <Story name="With Media and CTA" args={{
+  mediaComponent: <MediaComponent/>,
+  ctaComponent: <Button/>,}}
+  >
+    {args => <Hero {...args} />}
+  </Story>
+</Canvas>
+
+
+### Hero with Meida, CTA and pullContent
+<Canvas>
+  <Story name="With Media, CTA and Pull class" args={{
+  mediaComponent: <MediaComponent/>,
+  ctaComponent: <Button/>,
+  pullContent: true,}}
+  >
+    {args => <Hero {...args} />}
+  </Story>
+</Canvas>

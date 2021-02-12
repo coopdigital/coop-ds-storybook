@@ -1,10 +1,10 @@
 import React from "react";
 import MembershipBanner from "./MembershipBanner";
 
-export default {
-  title: "Base/MembershipBanner",
-  component: MembershipBanner,
-};
+// export default {
+//   title: "Base/MembershipBanner",
+//   component: MembershipBanner,
+// };
 
 const btn = {
   href: "https://membership.coop.co.uk/register",

@@ -1,0 +1,61 @@
+import {ArgsTable,  Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import FormValidation from "./FormValidation";
+
+export const BaseFormValidation = (args) => <FormValidation {...args} argTypes={{ onClick: {action: 'clicked' } }}/>;
+const errorLinks = [
+  {
+    href: "#client-name",
+    text: "enter your full name",
+  },
+  {
+    href: "#client-email-address",
+    text: "enter an email address",
+  },
+];
+
+<Meta title="Elements/FormValidation" component={FormValidation} />
+
+# FormValidation
+Intro to FormValidation
+
+## Usage
+Usage guidelines for the FormValidation component.
+
+## Default FormValidation Example
+A test cnavas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+<Canvas>
+  <FormValidation
+    heading="custom heading"
+    message="custom validation message here"
+    hasErrors="true">
+  </FormValidation>
+</Canvas>
+
+<hr/>
+
+## Stories for the FormValidation component
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+### Basic FormValidation story
+<Story name="Basic"
+  args= {{
+    errorLinks,
+    hasErrors: true,
+  }}
+>
+  { BaseFormValidation.bind({}) }
+</Story>
+
+
+### FormValidation Custom Body
+<Story name="Custom Body"
+  args= {{
+    heading: "There’s been a problem submitting this form",
+    message: "You must do the following:",
+    errorLinks,
+    hasErrors: true,
+  }}
+>
+  { BaseFormValidation.bind({}) }
+</Story>

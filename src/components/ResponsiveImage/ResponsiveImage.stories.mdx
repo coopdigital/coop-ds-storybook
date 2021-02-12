@@ -1,0 +1,135 @@
+import {
+  ArgsTable,
+  Meta,
+  Story,
+  Canvas,
+  Source,
+  Preview,
+} from "@storybook/addon-docs/blocks";
+import ResponsiveImage from "./ResponsiveImage";
+
+<!-- Set up some src, alt and sources props to pass into the component -->
+export const src =
+  "https://images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=png&q=60&w=600&h=338";
+
+export const alt = "How Co-op is supporting local communities";
+
+export const sourcesTest = [
+  {
+    type: "image/webp",
+    media: "(min-width: 1200)",
+    srcSet: {
+      "1x":
+        "//images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=600&amp;h=338",
+      "2x":
+        "//images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=600&amp;h=338",
+    },
+  },
+  {
+    type: "image/webp",
+    media: "(min-width: 600)",
+    srcSet: {
+      "1x":
+        "//images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=600&amp;h=338",
+      "2x":
+        "//images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=600&amp;h=338",
+    },
+  },
+];
+
+
+<!-- Add base Meta for each story,
+     meta like args can be overridden at story level if required -->
+<Meta title="Elements/ResponsiveImage" component={ResponsiveImage} />
+
+<!--- Start content -->
+# ResponsiveImage
+Intro to ResponsiveImage.
+
+## Usage
+Usage of ResponsiveImage form controls
+
+## Default ResponsiveImage example
+A test canvas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+Here is an example of a ResponsiveImage with one image source and alt attribute
+<Canvas>
+  <ResponsiveImage src={src} alt={alt}/>
+</Canvas>
+
+## Props
+<p>The ResponsiveImage takes the props from the table below.</p>
+<ArgsTable components={{ ResponsiveImage: ResponsiveImage }} />
+
+### Sources in responsive images
+Sources are useful for perfomance or art direction when using images on your web page or app.
+[More about responsive image can be found here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+
+
+Here is an example of how you might construct your sources for the ResponsiveImage component.  You should be able to build similar structures dynamically from your products data source.
+```js
+const sourcesTest = [
+  {
+    type: "image/webp",
+    media: "(min-width: 1200)",
+    srcSet: {
+      "1x":
+        "//images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=600&amp;h=338",
+      "2x":
+        "//images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=600&amp;h=338",
+    },
+  },
+  {
+    type: "image/webp",
+    media: "(min-width: 600)",
+    srcSet: {
+      "1x":
+        "//images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=600&amp;h=338",
+      "2x":
+        "//images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=webp&amp;q=60&amp;w=600&amp;h=338",
+    },
+  },
+];
+```
+## Accessibility
+alt tags are required and must be meaningful for screen reader users
+[More info on alt tags here](https://www.w3.org/QA/Tips/altAttribute).
+<hr />
+
+## Stories for the ResponsiveImage component
+
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+### Basic ResponsiveImage with src and alt attributes
+<Canvas>
+  <Story name="Basic"
+    args={{
+      src: src,
+      alt: alt,
+    }}>
+    {(args) => <ResponsiveImage {...args} />}
+  </Story>
+</Canvas>
+
+### ResponsiveImage with Sources
+<Canvas>
+  <Story name="With Sources"
+    args={{
+      src: src,
+      alt: alt,
+      sources: sourcesTest,
+    }}>
+    {(args) => <ResponsiveImage {...args} />}
+  </Story>
+</Canvas>
+
+### ResponsiveImage with alt error
+This should cause a Voilation in the Accessibility tab on the story canvas, due to the missing alt attribute.
+<Canvas>
+  <Story name="With alt missing"
+    args={{
+      src: src,
+    }}>
+    {(args) => <ResponsiveImage {...args} />}
+  </Story>
+</Canvas>

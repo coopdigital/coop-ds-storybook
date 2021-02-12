@@ -1,0 +1,48 @@
+import {ArgsTable,  Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import FormContainer from "./FormContainer";
+
+export const BaseFormContainer = (args) => <FormContainer {...args} argTypes={{ onClick: {action: 'clicked' } }}/>;
+
+<Meta title="Elements/FormContainer" component={FormContainer} />
+
+# FormContainer
+Intro to FormContainer
+
+The FormContainer is a base component to build forms from.
+
+It accepts children as a prop type, this prop would be made up from one or more form input components and buttons to populate the container
+
+## Usage
+Usage guidelines for the FormContainer component.
+
+## Default FormContainer Example
+A test cnavas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+<Canvas>
+  <FormContainer
+    id="custom"
+    className="customClass">
+    Props will be propagated to the form element
+  </FormContainer>
+</Canvas>
+
+## Stories for the FormContainer component
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+### A default FormContainer
+A default FormContainer looks like this....
+<Story name="Elements/FormContainer/Base">
+  { BaseFormContainer.bind({}) }
+</Story>
+
+
+<Story name="Elements/FormContainer/CustomProps"
+  args= {{
+    id: "customId",
+    className: "custom-class--name",
+    children: "Props will be propagated to the form element",
+  }}
+  argTypes={{ onClick: {action: 'clicked the story form container' } }}
+>
+  { BaseFormContainer.bind({}) }
+</Story>

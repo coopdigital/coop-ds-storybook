@@ -1,0 +1,73 @@
+import {
+  ArgsTable,
+  Meta,
+  Story,
+  Canvas,
+  Source,
+  Preview,
+} from "@storybook/addon-docs/blocks";
+import InputDOB from "./InputDOB";
+
+<!-- Set up error messages for error stories -->
+export const allErrors = {
+  day: "The day you entered is invalid",
+  month: "The month you entered is invalid",
+  year: "The year you entered is invalid",
+};
+
+<!-- Add base Meta for each story,
+     meta like args can be overridden at story level if required -->
+
+<Meta title="Patterns/InputDOB" component={InputDOB} />
+
+<!--- Start content -->
+
+# InputDOB
+
+Intro to InputDOB. Allows for grouping of InputCheckbox components under a fieldset with legend and optional hint text
+
+## Usage
+
+Use it in a form to group related checkboxes in a `<fieldset>`
+
+## Default InputDOB example
+
+A test cnavas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+
+## Props
+
+<p>The InputDOB takes the props from the table below.</p>
+<ArgsTable components={{ InputDOB: InputDOB }} />
+
+<hr />
+
+## Stories for the InputDOB component
+
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+### Basic InputDOB story
+<Canvas>
+  <Story name="Basic"
+    args={{
+      id: "basic",
+      name: "basic",
+    }}>
+    {(args) => <InputDOB {...args} />}</Story>
+</Canvas>
+
+### InputDOB with errors
+<Canvas>
+  <Story name="With all errors"
+    args={{
+      id: "withErrors",
+      name: "withErrors",
+      label: "With errors",
+      hasError: true,
+      errors: allErrors,
+    }
+  }>
+    {args => <InputDOB {...args} />}
+  </Story>
+</Canvas>
+

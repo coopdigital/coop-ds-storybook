@@ -101,12 +101,16 @@ MembershipBanner.defaultProps = {
 };
 
 MembershipBanner.propTypes = {
+  /** title - the title of the MembershipBanner component */
   title: PropTypes.string,
+  /** body - the body of the MembershipBanner component */
   body: PropTypes.node,
+  /** btn - the href and text of the button in the MembershipBanner component */
   btn: PropTypes.shape({
     href: PropTypes.string,
     text: PropTypes.string,
   }),
+  /** links - takes an array of objects the contain a `href` and `text` property to populate a list of links in the MembershipBanner component */
   links: PropTypes.arrayOf(
     PropTypes.shape({
       href: PropTypes.string,

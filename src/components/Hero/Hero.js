@@ -64,12 +64,19 @@ Hero.defaultProps = {
 };
 
 Hero.propTypes = {
+  /** title - is required and will be page title (H1) tag for the page */
   title: PropTypes.string.isRequired,
+  /** content - is required and supplies the lead paragraph for the page */
   content: PropTypes.string.isRequired,
+  /** squircleBg - is optional and provides a squircle background shape  */
   squircleBg: PropTypes.bool,
+  /** pullContent - is optional and brings the content below the hero up so it overlaps the bottom of the squirlce to bring the page elements together and create depth. */
   pullContent: PropTypes.bool,
+  /** ctaComponent - is optional and you can pass in a Link or Button component, or your own custom link/button react component  */
   ctaComponent: PropTypes.node,
+  /** mediaComponent - is optional and usually take an image in form of a ResponsiveImage react component */
   mediaComponent: PropTypes.node,
+  /** children - needs testing no current stories to support this functionality yet! */
   children: PropTypes.node,
 };
 

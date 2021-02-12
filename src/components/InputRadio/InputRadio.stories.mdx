@@ -1,0 +1,59 @@
+import {
+  ArgsTable,
+  Meta,
+  Story,
+  Canvas,
+  Source,
+  Preview,
+} from "@storybook/addon-docs/blocks";
+import InputRadio from "./InputRadio";
+
+<!-- Set up error messages for error stories -->
+export const allErrors = {
+  day: "The day you entered is invalid",
+  month: "The month you entered is invalid",
+  year: "The year you entered is invalid",
+};
+
+<!-- Add base Meta for each story,
+     meta like args can be overridden at story level if required -->
+
+<Meta title="Elements/InputRadio" component={InputRadio} />
+
+<!--- Start content -->
+
+# InputRadio
+Intro to InputRadio.
+
+## Usage
+Usage of radio form controls
+
+## Default InputRadio example
+A test canvas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+<Canvas>
+  <InputRadio id="base" name="base" label="Base Radio" value={1} />
+</Canvas>
+
+## Props
+<p>The InputRadio takes the props from the table below.</p>
+<ArgsTable components={{ InputRadio: InputRadio }} />
+
+<hr />
+
+## Stories for the InputRadio component
+
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+### Basic InputRadio story
+<Canvas>
+  <Story name="Basic"
+    args={{
+      id: "basic",
+      name: "basic",
+      label: "basic radio",
+      value: 1,
+    }}>
+    {(args) => <InputRadio {...args} />}
+  </Story>
+</Canvas>

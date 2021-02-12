@@ -4,6 +4,11 @@ import Alert from "./Alert";
 export default {
   title: "Base/Alert",
   component: Alert,
+  parameters: {
+    docs: {
+      page: './Alert.mdx'
+    }
+  },
 };
 
 export const Basic = (args) => <Alert {...args} />;
@@ -12,6 +17,11 @@ Basic.args = {
   link: {
     href: "#",
     text: "Example link text",
+  },
+};
+Basic.parameters = {
+  docs: {
+    page: './Alert.mdx'
   },
 };
 

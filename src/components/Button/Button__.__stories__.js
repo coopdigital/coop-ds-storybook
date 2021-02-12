@@ -7,8 +7,8 @@ export default {
   component: Button,
 };
 
-export const Basic = (args) => <Button {...args} onClick={action("clicked")} />;
-Basic.args = { variant: "primary", children: "Label" };
+export const Basic = (args) => <Button argTypes={{ onClick: { action: 'clicked' } }} />;
+// Basic.args = { variant: "primary", children: "Label" };
 
 export const All = () => (
   <>

@@ -2,10 +2,10 @@ import React from "react";
 import InputRadioGroup from "./InputRadioGroup";
 import InputRadio from "../InputRadio";
 
-export default {
-  title: "Base/InputRadioGroup",
-  component: InputRadioGroup,
-};
+// export default {
+//   title: "Base/InputRadioGroup",
+//   component: InputRadioGroup,
+// };
 
 export const RadioExample = () => (
   <>

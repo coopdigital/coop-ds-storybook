@@ -1,10 +1,10 @@
 import React from "react";
 import Text from "./Text";
 
-export default {
-  title: "Base/Text",
-  component: Text,
-};
+// export default {
+//   title: "Base/Text",
+//   component: Text,
+// };
 
 export const Basic = (args) => <Text {...args} />;
 Basic.args = { children: "Label" };

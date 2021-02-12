@@ -101,16 +101,23 @@ InputDOB.defaultProps = {
 };
 
 InputDOB.propTypes = {
+  /** id - (required) so we can target areas of the form for processing */
   id: PropTypes.string.isRequired,
+  /** name - (required) used for identifying the specific form element for labels and targeting values for sorm submission */
   name: PropTypes.string.isRequired,
+  /** label - The legend for the DOB input group */
   label: PropTypes.string,
+  /** hint - Helps guide user in filling in the input group  */
   hint: PropTypes.string,
+  /** hasError - should flag when errors with input occur.  Usually managed via state? */
   hasError: PropTypes.bool,
+  /** errors - The errors messages for each input to be displayed on input/form error */
   errors: PropTypes.shape({
     day: PropTypes.string,
     month: PropTypes.string,
     year: PropTypes.string,
   }),
+  /** :::TODO::: refs -  */
   refs: PropTypes.shape({
     day: PropTypes.oneOfType([
       PropTypes.func,

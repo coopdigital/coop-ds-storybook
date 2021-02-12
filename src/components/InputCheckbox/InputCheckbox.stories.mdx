@@ -1,0 +1,44 @@
+import { ArgsTable, Meta, Story, Canvas, Source, Preview } from '@storybook/addon-docs/blocks';
+import InputCheckbox from "./InputCheckbox";
+
+<!-- Add base Meta for each story,
+     meta like args can be overridden at story level if required -->
+<Meta title="Elements/InputCheckbox"
+      component={InputCheckbox}
+      args={{
+        id: 'basic',
+        name: `basic`,
+        label: "Basic checkbox",
+        value: 1, }}/>
+
+
+<!--- Start content -->
+# InputCheckbox
+Intro to InputCheckbox, it's a form checkbox
+
+## Usage
+Use it in forms
+
+## Default InputCheckbox example
+A test cnavas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+<Canvas>
+    <InputCheckbox id="checkbox1" name="checkbox1" value="0" label="Checkbox label"/>
+</Canvas>
+
+
+## Props
+The InputCheckbox takes the props from the table below.
+<ArgsTable components={{ InputCheckbox: InputCheckbox }} />
+
+<hr/>
+
+## Stories for the InputCheckbox component
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+### Basic InputCheckbox story
+<Canvas>
+  <Story name="Basic" >
+    {args => <InputCheckbox {...args} />}
+  </Story>
+</Canvas>

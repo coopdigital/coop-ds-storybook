@@ -12,10 +12,13 @@ module.exports = {
       filename: "cui-react.css",
     }),
   ],
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(jsx|js)$/,
         use: {
           loader: "babel-loader",
           options: {
