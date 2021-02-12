@@ -7,6 +7,22 @@ import {
   Preview,
 } from "@storybook/addon-docs/blocks";
 import List from "./List";
+import {renderComponentToHtml} from "../../../.storybook/renderToHtml"
+import CodeBlock from "../../internal/CodeBlock/";
+
+export const CodeBlockComponentToHtml = () => (
+  <code>
+    {renderComponentToHtml(<List/>)}
+  </code>
+)
+
+<CodeBlockComponentToHtml/>
+
+<CodeBlock component={<List/>}/>
+
+<code>
+  <CodeBlock component={<List/>}/>
+</code>
 
 <!-- Setup list items to populate list stories -->
 export const items = [
