@@ -7,7 +7,7 @@ addParameters({
   options: {
     showRoots: true,
     storySort: {
-      order: ['Docs', ['Intro', 'Getting Started'], 'Foundations', 'Base', 'Co-op UI'],
+      order: ['Docs', ['Intro'], 'Foundations', 'Elements', 'Component', 'Patterns', 'Layout'],
     },
   },
   // automatically create action args for all props that start with "on"
@@ -24,5 +24,11 @@ addParameters({
 
   docs: {
     theme: coopTheme,
+  },
+  html: {
+    prettier: {
+      tabWidth: 4,
+      useTabs: false,
+    },
   },
 });

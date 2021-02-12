@@ -1,0 +1,136 @@
+import {
+  ArgsTable,
+  Meta,
+  Story,
+  Canvas,
+  Source,
+  Preview,
+} from "@storybook/addon-docs/blocks";
+import Text from "./Text";
+
+
+<!-- Set up some children, nodes, text and inline elements to test with the Text component -->
+<!-- // export const InlineElTextAsComponent = () => ( <><p>Here is a <span>span element</span></p></> ); -->
+
+export const InlineElTextAsTemplateLiteral = `Here is a <span>span element</span>`;
+
+<!-- Add base Meta for each story,
+     meta like args can be overridden at story level if required -->
+<Meta title="Elements/Text" component={Text} />
+
+<!--- Start content -->
+# Text
+Intro to Text.
+
+## Usage
+Usage of Text form controls
+
+## Default Text example
+A test canvas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+Here is an example of a Text with one image source and alt attribute
+<Canvas>
+  <Text type="h1" children={`Some text to go into the Text component with type of h1 tag.`} />
+  <Text type="h2" children={`Some text to go into the Text component with type of h2 tag.`} />
+  <Text type="h3" children={`Some text to go into the Text component with type of h3 tag.`} />
+  <Text type="h4" children={`Some text to go into the Text component with type of h4 tag.`} />
+  <Text type="h5" children={`Some text to go into the Text component with type of h5 tag.`} />
+  <Text type="h6" children={`Some text to go into the Text component with type of h6 tag.`} />
+  <Text type="p" children={`Some text to go into the Text component with type of p tag.`} />
+</Canvas>
+
+## Props
+<p>The Text takes the props from the table below.</p>
+<ArgsTable components={{ Text: Text }} />
+
+
+## Accessibility
+
+- Only ever use one `h1` tag per page.
+- Make sure you have the correct flow of heading elements in your document...
+
+Examples of good and bad heading hierarchy
+
+
+## Stories for the Text component
+
+We can keep component stories at the bottom of the documentation pages, for better doc readability.
+
+### Basic Text with src and alt attributes
+<Canvas>
+  <Story name="Basic" args={{children: "Default props used are, variant regular and type `p`"}}>
+    {(args) => <Text {...args} />}
+  </Story>
+</Canvas>
+
+### Text with Mega variant
+<Canvas>
+  <Story name="With mega"
+    args={{
+      variant: "mega",
+      children: "Mega",
+    }}>
+    {(args) => <Text {...args} />}
+  </Story>
+</Canvas>
+
+### Text with Lead variant
+<Canvas>
+  <Story name="With lead"
+    args={{
+      variant: "lead",
+      children: "Lead",
+    }}>
+    {(args) => <Text {...args} />}
+  </Story>
+</Canvas>
+
+### Text with regular variant
+<Canvas>
+  <Story name="With regular"
+    args={{
+      variant: "regular",
+      children: "Regular",
+    }}>
+    {(args) => <Text {...args} />}
+  </Story>
+</Canvas>
+
+### Text with medium variant
+<Canvas>
+  <Story name="With medium"
+    args={{
+      variant: "medium",
+      children: "Medium",
+    }}>
+    {(args) => <Text {...args} />}
+  </Story>
+</Canvas>
+
+### Text with bold variant
+<Canvas>
+  <Story name="With bold"
+    args={{
+      variant: "bold",
+      children: "Bold",
+    }}>
+    {(args) => <Text {...args} />}
+  </Story>
+</Canvas>
+
+### Text, it cannot yet render inline elements e.g `<span>`
+These examples don't currently work when passing inline elements with your string
+<Canvas>
+  <Story name="With inline elements" args={{children: "Here is a <span>span element</span>"}}>
+    {(args) => <Text {...args} />}
+  </Story>
+</Canvas>
+
+### Text, it cannot yet render inline elements like `<span>`
+These examples don't currently work when passing inline elements with your string or template literal
+<Canvas>
+  <Story name="With inline elements as template literal" args={{children: InlineElTextAsTemplateLiteral}}>
+    {(args) => <Text {...args} />}
+  </Story>
+</Canvas>
+

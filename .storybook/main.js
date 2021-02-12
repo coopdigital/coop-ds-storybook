@@ -7,7 +7,8 @@ module.exports = {
     options: {
       configureJSX: true,
     },
-  },],
+  },
+  '@whitespace/storybook-addon-html'],
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.scss$/,

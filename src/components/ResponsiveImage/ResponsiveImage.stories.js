@@ -1,10 +1,10 @@
 import React from "react";
 import ResponsiveImage from "./ResponsiveImage";
 
-export default {
-  title: "Base/ResponsiveImage",
-  component: ResponsiveImage,
-};
+// export default {
+//   title: "Base/ResponsiveImage",
+//   component: ResponsiveImage,
+// };
 
 const src =
   "https://images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=png&q=60&w=600&h=338";

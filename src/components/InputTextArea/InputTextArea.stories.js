@@ -1,10 +1,10 @@
 import React from "react";
 import InputTextArea from "./InputTextArea";
 
-export default {
-  title: "Base/InputTextArea",
-  component: InputTextArea,
-};
+// export default {
+//   title: "Base/InputTextArea",
+//   component: InputTextArea,
+// };
 
 export const Basic = (args) => <InputTextArea {...args} />;
 Basic.args = { id: "basic", name: "basic" };
