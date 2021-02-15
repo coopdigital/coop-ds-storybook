@@ -32,11 +32,18 @@ const EditorialCard = ({
         data-linktext=""
       >
         <div className="coop-c-editorialcard__inner">
-          {mediaComponent && (
-            <div className="coop-c-editorialcard__media">
-              {mediaComponent}
-            </div>
-          )}
+          {/* mediaComponents requires two nested classes
+              coop-c-editorialcard__media on a <figure> tag
+              coop-c-editorialcard__image on a <picture> tag
+              e.g.
+                <figure className="coop-c-editorialcard__media">
+                  <picture className="coop-c-editorialcard__image">
+                  ....
+                  </picture>
+                </figure>
+          */}
+
+          {mediaComponent && ( mediaComponent )}
 
           <div className="coop-c-editorialcard__content">
             <header className="coop-c-editorialcard__header">

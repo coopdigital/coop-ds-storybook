@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import shortid from "shortid";
+import classNames from "../../utils/classNames";
 import "./responsiveImage.scss";
 
 const generateSourceMap = (sources) =>
@@ -24,12 +25,40 @@ const generateSourceMap = (sources) =>
     );
   });
 
-const ResponsiveImage = ({ src, alt, width, height, sources }) => {
+const ResponsiveImage = ({
+  src,
+  alt,
+  width,
+  height,
+  sources,
+  className,
+  figureClass,
+  pictureClass,
+  imageClass }) => {
+
+  const figureClasses = classNames("coop-c-image", [
+    figureClass && figureClass,
+    className,
+  ]);
+  const pictureClasses = classNames("coop-c-image__media", [
+    pictureClass && pictureClass,
+    className,
+  ]);
+  const imageClasses = classNames(null, [
+    imageClass && imageClass,
+    className,
+  ]);
+
   return (
-    <figure className="coop-c-image">
-      <picture className="coop-c-image__media">
+    <figure className={figureClasses}>
+      <picture className={pictureClasses}>
         {generateSourceMap(sources)}
-        <img src={src} alt={alt} width={width} height={height} />
+        <img
+          className={imageClasses}
+          src={src}
+          alt={alt}
+          width={width}
+          height={height} />
       </picture>
     </figure>
   );
@@ -52,6 +81,12 @@ ResponsiveImage.propTypes = {
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   /** source - takes an array of objects with the following properties: `type`, `media` and `srcSet` */
   sources: PropTypes.arrayOf(PropTypes.object),
+  /** figureClass - allows you to override|add additional classes to target the `<figure>` tag within the component  */
+  figureClass: PropTypes.string,
+  /** pictureClass - allows you to override|add additional classes to target the `<picture>` tag within the component */
+  pictureClass: PropTypes.string,
+  /** imageClass - - allows you to override|add additional classes to target the `<img>` tag within the component */
+  imageClass: PropTypes.string
 };
 
 export default ResponsiveImage;
