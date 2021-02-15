@@ -1,3 +1,9 @@
+
+/* this overrides the default .coop-c-image margin used in the ResponsiveImage component */
+.coop-c-editorialcard--horizontal .coop-c-editorialcard__media {
+  margin: 0 0 0;
+}
+
 @media (min-width: 48rem) and (max-width: 63.99rem) {
   .coop-c-editorialcard--horizontalOnTablet {
     display: flex;
@@ -12,6 +18,7 @@
     overflow: hidden;
     flex-basis: 31.6506309148%;
     width: 31.6506309148%;
+    margin: 0;
   }
 
   .coop-c-editorialcard--horizontalOnTablet .coop-c-editorialcard__image,
