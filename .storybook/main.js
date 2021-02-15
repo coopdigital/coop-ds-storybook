@@ -8,7 +8,8 @@ module.exports = {
       configureJSX: true,
     },
   },
-  '@whitespace/storybook-addon-html'],
+  '@whitespace/storybook-addon-html',
+  'storybook-addon-playroom',],
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.scss$/,

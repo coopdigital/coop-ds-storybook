@@ -31,4 +31,7 @@ addParameters({
       useTabs: false,
     },
   },
+  playroom: {
+    url: 'http://localhost:9000',
+  }
 });
