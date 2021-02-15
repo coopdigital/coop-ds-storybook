@@ -60,7 +60,8 @@
     "prop-types": "^15.5.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "shortid": "^2.2.15"
+    "shortid": "^2.2.15",
+    "storybook-addon-designs": "^5.4.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.1",
@@ -82,6 +83,7 @@
     "@storybook/linter-config": "^3.0.0",
     "@storybook/react": "6.1.17",
     "@storybook/theming": "^6.1.17",
+    "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.0.4",
     "@types/fs-extra": "^9.0.1",
     "@types/styled-components": "^5.1.0",

@@ -8,7 +8,8 @@ module.exports = {
       configureJSX: true,
     },
   },
-  '@whitespace/storybook-addon-html'],
+  '@whitespace/storybook-addon-html',
+  'storybook-addon-designs/register',],
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.scss$/,
