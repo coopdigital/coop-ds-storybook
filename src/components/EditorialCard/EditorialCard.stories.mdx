@@ -1,0 +1,205 @@
+import {
+  ArgsTable,
+  Meta,
+  Story,
+  Canvas,
+  Source,
+  Preview,
+} from "@storybook/addon-docs/blocks";
+import EditorialCard from "./EditorialCard";
+import ResponsiveImage from "../ResponsiveImage";
+
+import Grid from "../Grid";
+import GridItem from "../GridItem";
+
+<!-- Set up mediacomponent  -->
+
+export const MediaComponent = () => {
+  const src =
+    "https://images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=png&q=60&w=600&h=338";
+  const alt = "How Co-op is supporting local communities";
+  return <ResponsiveImage src={src} alt={alt} />;
+};
+
+export const testContent = `<p>hello and welcome to the content of a card <span>I'm in a span.</span></p>
+<p>another paragraph tag</p>`;
+
+<Meta
+  title="Component/EditorialCard"
+  component={EditorialCard}
+  args={{
+    title: "Editorial card title",
+    content: `<p>hello and welcome to the content of a card. <span>I'm in a span.</span></p>
+<p>Another paragraph tag</p>`,
+    link:
+      "https://coop-design-system.herokuapp.com/pattern-library/components/cards/editorial-card.html",
+  }}
+/>
+
+# EditorialCard
+NOTE:: Using the ResponsiveImage component as a subcomponent does work here yet!
+An editorial card contains a small piece of prose information on one subject that people can get more information about by tapping or clicking on the card
+
+## Default EditorialCard Example
+A test canvas to show the component and it's underlying code.
+A canvas can include stories or just plain components like the one below.
+
+<Canvas>
+  <EditorialCard
+    title="card title"
+    subtitle="card subtitle"
+    content={testContent}
+  />
+</Canvas>
+
+<Story name="Basic">{(args) => <EditorialCard {...args} />}</Story>
+
+<Story name="With subtitle" args={{ subtitle: "A card subtitle" }}>
+  {(args) => <EditorialCard {...args} />}
+</Story>
+
+<Story name="With image" args={{ mediaComponent: <MediaComponent /> }}>
+  {(args) => <EditorialCard {...args} />}
+</Story>
+
+<Story
+  name="With image and subtitle"
+  args={{
+    subtitle: "A card subtitle",
+    mediaComponent: <MediaComponent />,
+  }}
+>
+  {(args) => <EditorialCard {...args} />}
+</Story>
+
+
+<Story
+  name="With image horizontal"
+  args={{
+    horizontal: true,
+    mediaComponent: <MediaComponent />,
+  }}
+>
+  {(args) => <EditorialCard {...args} />}
+</Story>
+
+<Story
+  name="In 2 columns vertical"
+  args={{
+    mediaComponent: <MediaComponent />,
+  }}
+>{(args) =>
+  <Grid>
+    <GridItem md="6" key="1">
+      <EditorialCard {...args} />
+    </GridItem>
+    <GridItem md="6" key="2">
+      <EditorialCard {...args} />
+    </GridItem>
+  </Grid>
+  }
+</Story>
+
+
+<Story
+  name="In 3 columns vertical"
+  args={{
+    mediaComponent: <MediaComponent />,
+  }}
+>{(args) =>
+  <Grid>
+    <GridItem md="4" key="1">
+      <EditorialCard {...args} />
+    </GridItem>
+    <GridItem md="4" key="2">
+      <EditorialCard {...args} />
+    </GridItem>
+    <GridItem md="4" key="3">
+      <EditorialCard {...args} />
+    </GridItem>
+  </Grid>
+  }
+</Story>
+
+<Story
+  name="In 4 columns vertical"
+  args={{
+    mediaComponent: <MediaComponent />,
+  }}
+>{(args) =>
+  <Grid>
+    <GridItem md="3" key="1">
+      <EditorialCard {...args} />
+    </GridItem>
+    <GridItem md="3" key="2">
+      <EditorialCard {...args} />
+    </GridItem>
+    <GridItem md="3" key="3">
+      <EditorialCard {...args} />
+    </GridItem>
+    <GridItem md="3" key="4">
+      <EditorialCard {...args} />
+    </GridItem>
+  </Grid>
+  }
+</Story>
+
+
+<Story
+  name="In 2 columns horizontal"
+  args={{
+    horizontal: true,
+    mediaComponent: <MediaComponent />,
+  }}
+>{(args) =>
+  <Grid>
+    <GridItem sm="6" key="1">
+      <EditorialCard {...args} />
+    </GridItem>
+    <GridItem sm="6" key="2">
+      <EditorialCard {...args} />
+    </GridItem>
+  </Grid>
+  }
+</Story>
+
+
+<Story
+  name="In 2 columns horizontalOnTablet"
+  args={{
+    horizontalOnTablet: true,
+    mediaComponent: <MediaComponent />,
+  }}
+>{(args) =>
+  <Grid>
+    <GridItem sm="6" key="1">
+      <EditorialCard {...args} />
+    </GridItem>
+    <GridItem sm="6" key="2">
+      <EditorialCard {...args} />
+    </GridItem>
+  </Grid>
+  }
+</Story>
+
+
+<Story
+  name="In 3 columns horizontalOnTablet"
+  args={{
+    horizontalOnTablet: true,
+    mediaComponent: <MediaComponent />,
+  }}
+>{(args) =>
+  <Grid>
+    <GridItem sm="4" key="1">
+      <EditorialCard {...args} />
+    </GridItem>
+    <GridItem sm="4" key="2">
+      <EditorialCard {...args} />
+    </GridItem>
+    <GridItem sm="4" key="3">
+      <EditorialCard {...args} />
+    </GridItem>
+  </Grid>
+  }
+</Story>

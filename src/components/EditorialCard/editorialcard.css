@@ -1,0 +1,26 @@
+@media (min-width: 48rem) and (max-width: 63.99rem) {
+  .coop-c-editorialcard--horizontalOnTablet {
+    display: flex;
+  }
+
+  .coop-c-editorialcard--horizontalOnTablet .coop-c-editorialcard__inner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .coop-c-editorialcard--horizontalOnTablet .coop-c-editorialcard__media {
+    overflow: hidden;
+    flex-basis: 31.6506309148%;
+    width: 31.6506309148%;
+  }
+
+  .coop-c-editorialcard--horizontalOnTablet .coop-c-editorialcard__image,
+  .coop-c-editorialcard--horizontalOnTablet .coop-c-editorialcard__image img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .coop-c-editorialcard--horizontalOnTablet .coop-c-editorialcard__image img {
+    object-fit: cover;
+  }
+}

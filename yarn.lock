@@ -1793,6 +1793,11 @@
   resolved "https://registry.yarnpkg.com/@coopdigital/foundations-vars/-/foundations-vars-3.4.0.tgz#eff773b821cee7304133ef837b0b1b66bd878c55"
   integrity sha512-tlPyY9PSqDTP9mZ2v1l9ts51YDaCCwm2EzIs9FhCSYw7lxtwM8dp9Rfch9lKf/V80f35PJn8F0RGr5f4U/tgXw==
 
+"@coopdigital/shared-component--editorialcard@^2.4.2":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@coopdigital/shared-component--editorialcard/-/shared-component--editorialcard-2.4.2.tgz#0fc4d4d6b125f7ec06d82e3d2f0790021a17c801"
+  integrity sha512-6OqBYlIC3roS1Rm6qlzMS17IQu7ISF8ZmZ1CeCgkRWpKTTp8Tetvgvd5KYVzIJyfb1+UJWlrdAjRjw2MtBiABA==
+
 "@coopdigital/shared-component--hero@^2.1.18":
   version "2.1.18"
   resolved "https://registry.yarnpkg.com/@coopdigital/shared-component--hero/-/shared-component--hero-2.1.18.tgz#4a2b665f812113e9d3ae7828f503ac72c1011004"

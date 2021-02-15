@@ -50,6 +50,7 @@
     "@coopdigital/foundations-layout": "^3.2.3",
     "@coopdigital/foundations-typography": "^4.1.19",
     "@coopdigital/foundations-vars": "^3.3.0",
+    "@coopdigital/shared-component--editorialcard": "^2.4.2",
     "@coopdigital/shared-component--hero": "^2.1.18",
     "@coopdigital/shared-component--image": "^2.1.18",
     "@coopdigital/shared-component--membership": "^3.0.6",
