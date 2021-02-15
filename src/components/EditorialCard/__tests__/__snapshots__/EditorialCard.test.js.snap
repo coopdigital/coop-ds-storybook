@@ -35,9 +35,7 @@ Object {
               <div
                 class="coop-c-editorialcard__body"
               >
-                <p>
-                  content test
-                </p>
+                content test
               </div>
             </div>
           </div>
@@ -76,9 +74,7 @@ Object {
             <div
               class="coop-c-editorialcard__body"
             >
-              <p>
-                content test
-              </p>
+              content test
             </div>
           </div>
         </div>
