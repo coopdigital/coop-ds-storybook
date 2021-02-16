@@ -22,7 +22,7 @@ const MediaComponent = () => {
 
 describe("Signpost", () => {
   it("should render correctly", () => {
-    const wrapper = mount(<Signpost title="Sigpost title" url="#" />);
+    const wrapper = mount(<Signpost title="Signpost title" url="#" />);
     expect(() => wrapper.unmount()).not.toThrow();
 
     const tree = renderer.create(<Signpost title="Sigpost title" url="#" />).toJSON();
@@ -31,8 +31,6 @@ describe("Signpost", () => {
 
   //it should take a child component as mediacomponent without error
 	it("should take a child component as mediacomponent", () => {
-		const wrapper = mount(<Signpost title="Sigpost title" url="#" mediaComponent={<MediaComponent/>}/>);
-
 		const tree = renderer.create(<Signpost />).toJSON();
     expect(tree).toMatchSnapshot();
 	})
