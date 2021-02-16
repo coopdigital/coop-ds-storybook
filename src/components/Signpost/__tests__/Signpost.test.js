@@ -2,6 +2,7 @@ import React from "react";
 import { mount } from "enzyme";
 import renderer from "react-test-renderer";
 import Signpost from "../index";
+import ResponsiveImage from "../../ResponsiveImage";
 
 const MediaComponent = () => {
   const src =
@@ -21,14 +22,20 @@ const MediaComponent = () => {
 
 describe("Signpost", () => {
   it("should render correctly", () => {
-    const wrapper = mount(<Signpost src="src" alt="alt" />);
+    const wrapper = mount(<Signpost title="Sigpost title" url="#" />);
     expect(() => wrapper.unmount()).not.toThrow();
 
-    const tree = renderer.create(<Signpost />).toJSON();
+    const tree = renderer.create(<Signpost title="Sigpost title" url="#" />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   //it should take a child component as mediacomponent without error
+	it("should take a child component as mediacomponent", () => {
+		const wrapper = mount(<Signpost title="Sigpost title" url="#" mediaComponent={<MediaComponent/>}/>);
+
+		const tree = renderer.create(<Signpost />).toJSON();
+    expect(tree).toMatchSnapshot();
+	})
 
   //it should render the ImageComponent is used
 
