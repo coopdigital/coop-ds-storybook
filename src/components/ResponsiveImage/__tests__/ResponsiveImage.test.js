@@ -21,6 +21,13 @@ describe("ResponsiveImage", () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it("should allow figureClass and pictureClass to be added to the nested figure and picture elements", () => {
+    const wrapper = mount(<ResponsiveImage src="src" alt="alt" width="120" height="120" figureClass="coop-c-editorialcard__media" pictureClass="coop-c-editorialcard__image"/>);
+
+    expect(wrapper.find('.coop-c-image').hasClass('coop-c-editorialcard__media')).toEqual(true);
+    expect(wrapper.find('.coop-c-image__media').hasClass('coop-c-editorialcard__image')).toEqual(true);
+  });
+
   it("should render sources", () => {
     const sourcesTest = [
       {

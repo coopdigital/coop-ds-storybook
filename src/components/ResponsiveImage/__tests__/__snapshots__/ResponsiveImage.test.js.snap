@@ -1,5 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ResponsiveImage should allow figureClasses to be added to the nested figure element 1`] = `
+<figure
+  className="coop-c-image coop-c-editorialcard__media"
+>
+  <picture
+    className="coop-c-image__media"
+  >
+    <img
+      alt="alt"
+      className=""
+      height="120"
+      src="src"
+      width="120"
+    />
+  </picture>
+</figure>
+`;
+
 exports[`ResponsiveImage should allow width and height attributes on default src 1`] = `
 <figure
   className="coop-c-image"
@@ -9,6 +27,7 @@ exports[`ResponsiveImage should allow width and height attributes on default src
   >
     <img
       alt="alt"
+      className=""
       height="120"
       src="src"
       width="120"
@@ -26,6 +45,7 @@ exports[`ResponsiveImage should render correctly 1`] = `
   >
     <img
       alt="alt"
+      className=""
       height={null}
       src="src"
       width={null}
@@ -53,6 +73,7 @@ exports[`ResponsiveImage should render sources 1`] = `
     />
     <img
       alt="alt"
+      className=""
       height={null}
       src="src"
       width={null}
