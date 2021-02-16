@@ -1,19 +1,158 @@
-import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
 import Signpost from "./Signpost";
+import ResponsiveImage from "../ResponsiveImage";
+import Grid from "../Grid";
+import GridItem from "../GridItem";
 
-<Meta title="Component/Signpost" component={Signpost} />
+<!-- set up images for use in signpost stories -->
+export const SignPostMediaComponent = () => {
+  const src =
+    "https://images.ctfassets.net/bffxiku554r1/7XDwxNP8ioupeMdJZxNS8/d23d2b802d6be0ecbcb7abd1ff33b159/coop-supporting-local-communities.png?fm=png&q=60&w=600&h=338";
+  const alt = "How Co-op is supporting local communities";
+  const figureClass = "coop-c-signpost__media";
+  const pictureClass = "coop-c-signpost__image";
+  return (
+    <ResponsiveImage
+      src={src}
+      alt={alt}
+      figureClass={figureClass}
+      pictureClass={pictureClass}
+    />
+  );
+};
+
+<Meta title="Component/Signpost"
+      component={Signpost}
+      args={{
+        title: "Signpost title",
+        link: "#"
+      }} />
 
 # Signpost
 A link card that can be displayed with or without an image.
 
 Signpost navigation is used in pages to link to permanent content.
 
-<code>
-.a-class-name
-</code>
 
 
-<Story name="Signpost/All">
-  <Signpost title="Signpost title" url="#" />
-  <Signpost title="Signpost title" url="#" mediaComponent="true" />
+<Story name="Basic">
+  {args => <Signpost {...args} /> }
+</Story>
+
+<Story name="With image"
+  args={{
+    mediaComponent: <SignPostMediaComponent />
+  }}>
+  { args => <Signpost {...args} /> }
+</Story>
+
+
+<Story
+  name="In 2 columns default">
+  {(args) =>
+    <Grid>
+      <GridItem md="6" key="1">
+        <Signpost {...args} />
+      </GridItem>
+      <GridItem md="6" key="2">
+        <Signpost {...args} />
+      </GridItem>
+    </Grid>
+  }
+</Story>
+
+<Story
+  name="In 2 columns with Image"
+  args={{
+    mediaComponent: <SignPostMediaComponent />,
+  }}
+>{(args) =>
+  <Grid>
+    <GridItem md="6" key="1">
+      <Signpost {...args} />
+    </GridItem>
+    <GridItem md="6" key="2">
+      <Signpost {...args} />
+    </GridItem>
+  </Grid>
+  }
+</Story>
+
+<Story
+  name="In 3 columns default">
+  {(args) =>
+    <Grid>
+      <GridItem md="4" key="1">
+        <Signpost {...args} />
+      </GridItem>
+      <GridItem md="4" key="2">
+        <Signpost {...args} />
+      </GridItem>
+      <GridItem md="4" key="3">
+        <Signpost {...args} />
+      </GridItem>
+    </Grid>
+  }
+</Story>
+
+<Story
+  name="In 3 columns with Image"
+  args={{
+    mediaComponent: <SignPostMediaComponent />,
+  }}
+>{(args) =>
+  <Grid>
+    <GridItem md="4" key="1">
+      <Signpost {...args} />
+    </GridItem>
+    <GridItem md="4" key="2">
+      <Signpost {...args} />
+    </GridItem>
+    <GridItem md="4" key="3">
+      <Signpost {...args} />
+    </GridItem>
+  </Grid>
+  }
+</Story>
+
+<Story name="In 4 columns default">
+  {(args) =>
+    <Grid>
+      <GridItem md="3" key="1">
+        <Signpost {...args} />
+      </GridItem>
+      <GridItem md="3" key="2">
+        <Signpost {...args} />
+      </GridItem>
+      <GridItem md="3" key="3">
+        <Signpost {...args} />
+      </GridItem>
+      <GridItem md="3" key="4">
+        <Signpost {...args} />
+      </GridItem>
+    </Grid>
+  }
+</Story>
+
+<Story
+  name="In 4 columns with Image"
+  args={{
+    mediaComponent: <SignPostMediaComponent />,
+  }}
+>{(args) =>
+  <Grid>
+    <GridItem md="3" key="1">
+      <Signpost {...args} />
+    </GridItem>
+    <GridItem md="3" key="2">
+      <Signpost {...args} />
+    </GridItem>
+    <GridItem md="3" key="3">
+      <Signpost {...args} />
+    </GridItem>
+    <GridItem md="3" key="4">
+      <Signpost {...args} />
+    </GridItem>
+  </Grid>
+  }
 </Story>
