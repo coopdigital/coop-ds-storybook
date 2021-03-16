@@ -4,9 +4,9 @@ import "./blockQuote.scss";
 
 const BlockQuote = ({ className, citation, children }) => {
   return (
-    <blockquote>
+    <blockquote className="coop-t-blockquote">
       <p className={className}>{children}</p>
-      <cite>{citation}</cite>
+      <cite className="coop-t-blockquote__citation">{citation}</cite>
     </blockquote>
   );
 };
