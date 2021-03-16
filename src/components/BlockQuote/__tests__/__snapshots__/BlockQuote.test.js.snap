@@ -1,31 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BlockQuote should render default BlockQuote 1`] = `
-<blockquote
-  className="coop-t-blockquote"
->
+<blockquote>
   <p
     className={null}
   />
-  <cite
-    className="coop-t-blockquote__citation"
-  />
+  <cite />
 </blockquote>
 `;
 
 exports[`BlockQuote should work with all variants 1`] = `
 <div>
-  <blockquote
-    className="coop-t-blockquote"
-  >
+  <blockquote>
     <p
       className="newClass"
     >
       Quote
     </p>
-    <cite
-      className="coop-t-blockquote__citation"
-    >
+    <cite>
       cite
     </cite>
   </blockquote>
