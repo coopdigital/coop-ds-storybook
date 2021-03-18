@@ -27,7 +27,8 @@
     "storyboook:nocache": "yarn storybook --no-manager-cache",
     "test": "jest",
     "test:watch": "jest --verbose --watch",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "chromatic": "npx chromatic --project-token 6d6203e683f2"
   },
   "lint-staged": {
     "*.html": [
