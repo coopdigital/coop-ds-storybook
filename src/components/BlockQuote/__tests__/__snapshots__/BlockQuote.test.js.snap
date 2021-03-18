@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BlockQuote should render default BlockQuote 1`] = `
-<blockquote>
+<blockquote
+  className="coop-t-blockquote"
+>
   <p
     className={null}
   />
@@ -13,7 +15,9 @@ exports[`BlockQuote should render default BlockQuote 1`] = `
 
 exports[`BlockQuote should work with all variants 1`] = `
 <div>
-  <blockquote>
+  <blockquote
+    className="coop-t-blockquote"
+  >
     <p
       className="newClass"
     >
