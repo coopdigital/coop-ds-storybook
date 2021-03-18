@@ -5,7 +5,9 @@ exports[`BlockQuote should render default BlockQuote 1`] = `
   <p
     className={null}
   />
-  <cite />
+  <cite
+    className="coop-t-blockquote__citation"
+  />
 </blockquote>
 `;
 
@@ -17,7 +19,9 @@ exports[`BlockQuote should work with all variants 1`] = `
     >
       Quote
     </p>
-    <cite>
+    <cite
+      className="coop-t-blockquote__citation"
+    >
       cite
     </cite>
   </blockquote>
