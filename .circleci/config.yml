@@ -20,7 +20,7 @@ jobs:
       - run: npm install
       - run: npm run build:storybook
         # 👇 Runs the Chromatic CLI
-      - run: npx chromatic --project-token=${CHROMATIC_PROJECT_TOKEN} --storybook-build-dir=storybook-static
+      - run: npx chromatic --project-token=${CHROMATIC_PROJECT_TOKEN} --storybook-build-dir=storybook-static --exit-once-uploaded
 
 workflows:
   chromatic-deploy:
