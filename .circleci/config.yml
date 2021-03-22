@@ -30,7 +30,7 @@ jobs:
 workflows:
   chromatic-deploy:
     jobs:
-      - chromatic-build-and-deploy
+      - chromatic-build-and-deploy:
           requires:
             - ready
 
