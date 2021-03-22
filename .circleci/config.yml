@@ -1,7 +1,12 @@
 version: 2.1
-orbs:
-  node: circleci/node@3.0.0
+
+executors:
+  node:
+    docker:
+      - image: circleci/node:12
+
 jobs:
+  executor: node
   chromatic-build-and-deploy:
     docker:
       - image: circleci/node:12
@@ -15,7 +20,7 @@ jobs:
       - run: npm ci
       - run: npm run build:storybook
         # 👇 Runs the Chromatic CLI
-      # - run: yarn chromatic --project-token=${CHROMATIC_PROJECT_TOKEN} --storybook-build-dir=storybook-static
+      # - run: npm run chromatic --project-token=${CHROMATIC_PROJECT_TOKEN} --storybook-build-dir=storybook-static
 
 workflows:
   chromatic-deploy:
