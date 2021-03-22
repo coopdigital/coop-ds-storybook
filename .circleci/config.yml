@@ -1,7 +1,28 @@
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
+jobs:
+  chromatic-build-and-deploy:
+    docker:
+      - image: circleci/node:12
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+      - run: npm ci
+      - run: npm run build:storybook
+        # 👇 Runs the Chromatic CLI
+      # - run: yarn chromatic --project-token=${CHROMATIC_PROJECT_TOKEN} --storybook-build-dir=storybook-static
+
 workflows:
-  node-tests:
+  chromatic-deploy:
     jobs:
-      - node/test
+      - chromatic-build-and-deploy
+
+
+
+
+
