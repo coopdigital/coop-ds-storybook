@@ -7,6 +7,11 @@ executors:
 
 jobs:
   executor: node
+  ready:
+    filters:
+      branches:
+        ignore: master
+    type: approval
   chromatic-build-and-deploy:
     docker:
       - image: circleci/node:12
@@ -26,6 +31,8 @@ workflows:
   chromatic-deploy:
     jobs:
       - chromatic-build-and-deploy
+          requires:
+            - ready
 
 
 
