@@ -8,6 +8,8 @@ executors:
 jobs:
   executor: node
   chromatic-build-and-deploy:
+    docker:
+      - image: circleci/node:12
     working_directory: ~/repo
     steps:
       - checkout
