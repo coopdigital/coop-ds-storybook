@@ -1,0 +1,44 @@
+version: 2.1
+
+executors:
+  node:
+    docker:
+      - image: circleci/node:12
+
+jobs:
+  executor: node
+  chromatic-build-and-deploy:
+    executor: node
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - sb-packages-{ checksum "package.json" }}
+            - sb-packages-
+      - run: npm install
+      - save_cache:
+          name: Saving cache for node_modules
+          key: sb-packages-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
+      - run: npm run build:storybook
+        # 👇 Runs the Chromatic CLI
+      - run: npx chromatic --project-token=${CHROMATIC_PROJECT_TOKEN} --storybook-build-dir=storybook-static --exit-once-uploaded
+
+workflows:
+  chromatic-deploy:
+    jobs:
+      - ready:
+          filters:
+            branches:
+              ignore: master
+          type: approval
+      - chromatic-build-and-deploy:
+          requires:
+            - ready
+
+
+
+
+
